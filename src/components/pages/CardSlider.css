@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     height: auto; /* Set a fixed height for the image container */
-    width: 93.5%;
+    width: 93%;
     margin-bottom: 10px; /* Space between the image and the title */
 }
 
@@ -77,11 +77,11 @@
 .column-button {
     background-color: #ff9800; /* Blue button */
     color: white;
-    height: 50px;
+height: 50px ;
+width: 50px;
     border-radius: 5px;
     border-color: wheat;
-    margin-bottom: 100px;
-    
+    margin-bottom: 140px;  
     /* Full width for button */
 }
 
@@ -89,6 +89,7 @@
 .avail-button {
     background-color:#ff9800; /* Button background color */
     color: white; /* Button text color */
+    margin-right: 30px;
     padding: 10px 10px; /* Padding around button text */
     border: none; /* No border */
     cursor: pointer; /* Pointer cursor on hover */
@@ -97,7 +98,8 @@
     font-size: 16px;
     height: 50px;
     font-weight: bold;
-    width: 60%;
+    width: 50%;
+    
 }
 
 .avail-button:hover {

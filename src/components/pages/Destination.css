@@ -33,12 +33,14 @@
   }
   
   .slick-prev {
-    left: 0px;
-    z-index: 1;
+    left: -90px;
+  margin-left: -40px;
+    background-color: aqua;
+    z-index: 9;
   }
   
   .slick-next {
-    right: -40px;
+    right: 10px;
     z-index: 1;
   }
   

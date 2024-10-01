@@ -19,37 +19,37 @@ const Destination = () => {
       <div className="carousel-wrapper">
       <Slider {...settings}>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="Abu Dhabi" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Abu Dhabi" />
           <p>Abu Dhabi</p>
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="Norway" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Norway" />
           <p>Norway</p>
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="Kerala" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Kerala" />
           <p>Kerala</p>
         </div>
         <div className="carousel-item trending">
-          <img src="https://via.placeholder.com/50" alt="Bali" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Bali" />
           <p>Bali</p>
           <span className="trending-badge">Trending</span>
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="Rajasthan" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Rajasthan" />
           <p>Rajasthan</p>
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="Vietnam" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Vietnam" />
           <p>Vietnam</p>
         </div>
         <div className="carousel-item trending">
-          <img src="https://via.placeholder.com/50" alt="Ladakh" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Ladakh" />
           <p>Ladakh</p>
           <span className="trending-badge">Trending</span>
         </div>
         <div className="carousel-item">
-          <img src="https://via.placeholder.com/50" alt="South Africa" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="South Africa" />
           <p>South Africa</p>
         </div>
       </Slider>

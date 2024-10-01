@@ -1,0 +1,118 @@
+/* Ensure the container takes the full viewport height and centers content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    height: 1000px; /* Full viewport height */
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  /* Content container centered with padding */
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 400px;
+    width: 70%; /* Adjust width as needed */
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for aesthetics */
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    font-weight: bold;
+color: #393939;
+
+  }
+
+
+  
+  /* Each section gets equal space */
+  .about-section,
+  .suppliers-section,
+  .travellers-section,
+  .destinations-section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  /* Text and styling for section headers */
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Remove bullets and padding from lists */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Add margin between list items */
+  li {
+    margin: 5px 0;
+    color: #B7B7B7;
+    margin-top: 10px;
+
+  }
+  
+  /* Styling for the warning text */
+  .warning {
+    color: red;
+  }
+  
+  /* Grid layout for the destinations */
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  /* Style for individual destination items */
+  .destination {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #2F343C ;
+    color: white;
+    padding: 20px;
+    width: 100vw; /* Full-width footer */
+    position: absolute;
+    bottom: 0;
+    height: 50%; /* Extend footer to half the height of the content div */
+    z-index: 1; /* Position footer below the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Footer text alignment and styling */
+  .footer p {
+   
+
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  /* Styling for social media icons */
+  .social-icons {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons i {
+    margin: 0 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

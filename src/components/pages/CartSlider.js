@@ -40,7 +40,8 @@ const CardSlider = ({ images, name }) => {
         </div>
         {/* Flex container for the buttons */}
         <div className="button-container">
-            <button className="column-button">C</button> {/* Left button */}
+            <button className="column-button"><i class="fas fa-phone icon"></i>
+            </button> {/* Left button */}
             <button className="avail-button">Avail This Offer</button> {/* Right button */}
         </div>
     </div>

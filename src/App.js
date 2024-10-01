@@ -5,7 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Navbar from "./components/pages/Navbar";
 import CardSlider from "./components/pages/CartSlider";
-import imagesDubai from '../src/array/imageData'
+import {images , images2} from '../src/array/imageData'
+import Footer from "./components/pages/Footer";
 function App() {
   const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
 
@@ -16,9 +17,16 @@ function App() {
         {/* Conditionally render Destination component or Activities based on the activeTab */}
         {activeTab === "Tours" ? <Destination /> : <div>Activities Content</div>}     
        {/* Apply the class here */}
-            <CardSlider images={imagesDubai} name = "Dubai"/> 
-            <CardSlider images={imagesDubai} name = "Dubai"/> 
-            <CardSlider images={imagesDubai} name = "Dubai"/> 
+            <CardSlider images={images} name = "Dubai"/> 
+            <CardSlider images={images2} name = "Singapore"/> 
+            <CardSlider images={images} name = "North East"/> 
+            <CardSlider images={images} name = "Jaipur"/> 
+            <CardSlider images={images} name = "Kolkata"/> 
+            <CardSlider images={images} name = "New Delhi"/> 
+            <CardSlider images={images} name = "Tamil Nadu"/> 
+            <CardSlider images={images} name = "Kerela "/> 
+            <CardSlider images={images} name = "Myanmar"/> 
+             <Footer></Footer>
         </div>
     
   );
