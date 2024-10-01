@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import Destination from "./components/pages/Destination";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
+import Navbar from "./components/pages/Navbar";
+import CardSlider from "./components/pages/CartSlider";
+import imagesDubai from '../src/array/imageData'
 function App() {
+  const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Navbar></Navbar>
+  
+        {/* Conditionally render Destination component or Activities based on the activeTab */}
+        {activeTab === "Tours" ? <Destination /> : <div>Activities Content</div>}     
+       {/* Apply the class here */}
+            <CardSlider images={imagesDubai} name = "Dubai"/> 
+            <CardSlider images={imagesDubai} name = "Dubai"/> 
+            <CardSlider images={imagesDubai} name = "Dubai"/> 
+        </div>
+    
   );
 }
 
