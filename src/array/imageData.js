@@ -1,7 +1,11 @@
+import img1 from '../assets/images/dubai1.avif'
+import img2 from '../assets/images/dubai2.avif'
+import img3 from '../assets/images/dubai3.avif'
+
 export const images = [
     {
         title: 'Dubai Highlights | Skyline And Sandscapes',
-        src : 'https://media1.thrillophilia.com/filestore/4cgc0ibn1rqwvli84izupxwe45nv_shutterstock_2384596901%20(1).jpg?w=360&dpr=2' ,
+        src : img1 ,
         price: 'INR 45,000',
         originalPrice: 'INR 74,002',
         rating: 4.9,
@@ -9,7 +13,7 @@ export const images = [
         discount: 'Save INR 29,002',
     },
     {
-        src: 'https://media1.thrillophilia.com/filestore/0hdjtmduamliielzcvdsepune779_dubai%20skyline.jpg?w=340&dpr=2',
+        src: img2 ,
         title: 'Escape To Dubai | Flights Inclusive Deal',
         price: 'INR 68,550',
         originalPrice: 'INR 1,24,761',
@@ -18,7 +22,7 @@ export const images = [
         discount: 'Save INR 56,211',
     },
     {
-        src: 'https://media1.thrillophilia.com/filestore/bcouye8teeznrzitmgpvnmfvrywh_Aquaventure-Lifestyle-WaterparkHeroFamilyRideOverlookingResort.webp?w=340&dpr=2',
+        src: img3 ,
         title: 'A Journey To The Golden Emirates',
         price: 'INR 86,000',
         originalPrice: 'INR 1,11,836',

@@ -39,35 +39,42 @@ const Footer = () => {
         </div>
 
         <div className="destinations-section">
-          <h3>TRAVEL DESTINATIONS</h3>
-          <div className="destinations-grid">
-            <div className="destination">Bali</div>
-            <div className="destination">Dubai</div>
-            <div className="destination">Singapore</div>
-            <div className="destination">Thailand</div>
-            <div className="destination">Andaman</div>
-            <div className="destination">India</div>
-            <div className="destination">Ladakh</div>
-            <div className="destination">Hong Kong</div>
-            <div className="destination">Sri Lanka</div>
-          </div>
-        </div>
+  <h3>TRAVEL DESTINATIONS</h3>
+  <div className="destinations-grid">
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Bali</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Dubai</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Singapore</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Thailand</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Andaman</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>India</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Ladakh</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Hong Kong</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Sri Lanka</div>
+  </div>
+</div>
+
+        
       </div>
 
       <footer className="footer">
-      <div style={{height : '2500px'}}></div>
-        <p>© 2024 Thrillophilia.com All rights reserved.</p>
-        <div className="social-icons">
+    <div style={{height : '1700px'}}></div>
+    <h2>thrillophilio.com</h2>
+    <div style={{height : '200px'}}></div>
+    <div className="social-icons">
           <i className="fab fa-facebook"></i>
           <i className="fab fa-instagram"></i>
           <i className="fab fa-twitter"></i>
           <i className="fab fa-linkedin"></i>
           <i className="fab fa-youtube"></i>
         </div>
-        <p>
-          The content and images used on this site are copyright protected and copyrights vest with the respective owners. Unauthorized use is prohibited and punishable by law.
-        </p>
-        <div style={{height : '1000px'}}></div>
+        <div style={{height : '400px'}}></div>
+        <p>© 2024 Thrillophilia.com All rights reserved.</p>
+       
+        <h4>
+        The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+        </h4>
+
+         <div style={{height : '100px'}}></div>
       </footer>
     </div>
   );

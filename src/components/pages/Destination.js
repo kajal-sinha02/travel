@@ -19,8 +19,8 @@ const Destination = () => {
       <div className="carousel-wrapper">
       <Slider {...settings}>
         <div className="carousel-item">
-          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Abu Dhabi" />
-          <p>Abu Dhabi</p>
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="AbuDhabi" />
+          <p>AbuDhabi</p>
         </div>
         <div className="carousel-item">
           <img src="https://static.thenounproject.com/png/1397251-200.png" alt="Norway" />
@@ -49,13 +49,13 @@ const Destination = () => {
           <span className="trending-badge">Trending</span>
         </div>
         <div className="carousel-item">
-          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="South Africa" />
+          <img src="https://static.thenounproject.com/png/1397251-200.png" alt="SouthAfrica" />
           <p>South Africa</p>
         </div>
       </Slider>
       </div>
       
-      <div className="buttons">
+     <div className="buttons">
   <button
     className={`toggle-button ${activeTab === "Tours" ? "active" : ""}`}
     onClick={() => setActiveTab("Tours")}
@@ -67,8 +67,8 @@ const Destination = () => {
     onClick={() => setActiveTab("Activities")}
   >
     Activities
-  </button>
-</div>
+  </button> 
+</div> 
 
     </div>
   );

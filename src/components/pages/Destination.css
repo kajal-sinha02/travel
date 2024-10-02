@@ -1,8 +1,4 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
+
   
   .carousel-buttons-wrapper {
     display: flex;
@@ -16,8 +12,7 @@
   
   .carousel-container {
     width: 100%; /* Full width of the viewport */
-    margin: 0;
-    padding: 10px;
+   
     border-top: 2px solid #EFEFEF; /* Grey line above */
     border-bottom: 2px solid #EFEFEF; /* Grey line below */
     display: flex;
@@ -42,18 +37,21 @@
   .slick-next {
     right: 10px;
     z-index: 1;
-  }
+  } 
   
   /* Adjusted toggle button styling */
   .buttons {
     display: flex;
-    justify-content: center; /* Center buttons horizontally */
+    justify-content: flex-end; /* Align buttons to the right */
     gap: 0; /* Remove gap to make them look like a toggle */
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 10px;
     width: 220px; /* Ensures buttons occupy equal space together */
-    margin-left: 100px;
-  }
+    position: absolute; /* Fix the position of the buttons */
+    right: 20px; /* Distance from the right side of the screen */
+    top: 20px; /* Adjust the top position if needed */
+}
+
   
   .toggle-button {
     padding: 10px 20px;
@@ -109,6 +107,7 @@
   .carousel-item {
     position: relative;
     text-align: center;
+
   }
   
   .carousel-item img {
@@ -121,7 +120,9 @@
     font-weight: 2px;
     margin-top: 5px;
     font-size: 12px;
-    margin-right: 100px;
+    display: flex;
+    margin-bottom: 30px;
+    
   }
   
   .trending-badge {
@@ -142,3 +143,20 @@
     align-items: center;
   }
   
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular arrows */
+    background-color: #ffffff; /* Light gray background for arrows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-prev:hover, .slick-next:hover {
+    background-color: #ffffff; /* Darker gray on hover */
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 20px; /* Font size for arrow characters */
+    color: #888888; /* Arrow color */
+}

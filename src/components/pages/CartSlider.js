@@ -5,14 +5,28 @@ import './CardSlider.css';
 
 const CardSlider = ({ images, name }) => {
     const settings = {
-        dots: false, // Show dots for navigation
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3, // Number of slides to show at once
-        slidesToScroll: 1,
-        centerMode: false, // Disable center mode
-        nextArrow: <SampleNextArrow />, // Custom Next Arrow
-        prevArrow: <SamplePrevArrow />, // Custom Prev Arrow
+        dots: false, // No navigation dots
+        infinite: true, // Infinite looping
+        speed: 500, // Transition speed
+        slidesToShow: 3, // Show 3 slides at once
+        slidesToScroll: 1, // Scroll one slide at a time
+        swipeToSlide: true, // Allows users to scroll between slides by swiping
+        draggable: true, // Allow dragging for desktop users
+        swipe: true, // Enable swipe functionality for mobile
+        responsive: [
+            {
+                breakpoint: 1024, // Adjust for tablets
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 600, // Adjust for mobile
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
 
     return (
@@ -38,11 +52,12 @@ const CardSlider = ({ images, name }) => {
             <p className="discount">{image.discount}</p>
             <p className="rating">Rating: {image.rating}</p>
         </div>
-        {/* Flex container for the buttons */}
+
         <div className="button-container">
-            <button className="column-button"><i class="fas fa-phone icon"></i>
-            </button> {/* Left button */}
-            <button className="avail-button">Avail This Offer</button> {/* Right button */}
+            {/* <button className="column-button"><i class="fas fa-phone icon"></i>
+            </button>  */}
+            <button className="avail-button2"><i className="fas fa-phone icon"></i> </button>
+            <button className="avail-button">Avail This Offer</button>
         </div>
     </div>
     
