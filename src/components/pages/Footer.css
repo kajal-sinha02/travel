@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between; /* Distribute space between the content and footer */
   align-items: center; /* Centers content horizontally */
-  height: 300px; /* Use min-height to ensure it takes the full height */
+  height: 350px; /* Use min-height to ensure it takes the full height */
   font-family: Arial, sans-serif;
   position: relative;
   width: 100%;
@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 20px;
-  height: 500px; /* Adjust this height based on your design */
+  height: 750px; /* Adjust this height based on your design */
   width: 70%; /* Adjust width as needed */
   background-color: #ffffff;
   border-radius: 15px;

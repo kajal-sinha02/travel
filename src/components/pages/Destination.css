@@ -5,13 +5,16 @@
   justify-content: center; /* Center the carousel content */
   border-top: 2px solid #EFEFEF; /* Grey line above */
   border-bottom: 2px solid #EFEFEF; /* Grey line below */
+  padding: 10px 0; /* Optional: Add some vertical padding */
 }
 
 /* Carousel Wrapper */
 .carousel-wrapper {
-  width: 79%; /* Constrain the carousel content to 80% of the screen */
+  width: 75%; /* Constrain the carousel content to 75% of the screen */
   position: relative;
-  margin: 15px 0; /* Centering margins */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Subtle box shadow */
+  border-radius: 8px; 
+  overflow: hidden; /* Prevent items from overflowing the container */
 }
 
 /* Carousel Item */
@@ -22,6 +25,14 @@
   justify-content: center;
   flex-direction: column; /* Stack image and text vertically */
   align-items: center; /* Center items horizontally */
+  border-radius: 8px; /* Rounded corners on carousel items */
+  background-color: #fff; /* Background color for items */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; Smooth hover effects */
+}
+
+.carousel-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  /* box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); Stronger shadow on hover */
 }
 
 /* Style for the images */
@@ -29,17 +40,18 @@
   width: 50px; /* Set a fixed width for the images */
   height: 50px; /* Set a fixed height for the images */
   margin-bottom: 5px; /* Space between image and text */
-  margin-left: 58px
+  display: block; /* Ensures image is treated as a block element */
+  margin-left: auto; /* Auto margin on the left */
+  margin-right: auto; /* Auto margin on the right */
 }
 
 /* Style for the paragraph text */
 .carousel-item p {
   color: #333; /* Text color */
-font-weight: 500;
+  font-weight: 500;
   text-align: center; /* Center the text */
   font-size: 12px; /* Font size */
   margin: 0; /* Remove margins for tight spacing */
-  margin-right: 10px;
 }
 
 /* Trending Badge */
@@ -55,23 +67,69 @@ font-weight: 500;
 }
 
 /* SLICK ARROWS STYLES */
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   width: 40px; /* Width for arrow buttons */
   height: 40px; /* Height for arrow buttons */
   border-radius: 50%; /* Circular arrows */
-  background-color: #ffffff; /* Background color for arrows */
+  background-color: transparent;/* Background color for arrows */
+  color: white; /* Color for the arrow text/icons */
   display: flex;
   justify-content: center; /* Center icon in the button */
   align-items: center; /* Center icon in the button */
+  border: none; /* Remove default border */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow on arrows */
+  cursor: pointer; /* Pointer cursor on hover */
+  /* transition: background-color 0.3s ease, color 0.3s ease; Smooth transition */
+  position: absolute; /* Position arrows absolutely within the wrapper */
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  z-index: 1; /* Ensure arrows are above carousel items */
 }
 
-.slick-prev:hover, .slick-next:hover {
-  background-color: #f0f0f0; /* Change background on hover */
+.slick-prev {
+  left: -20px; /* Position to the left */
 }
 
-.slick-prev:before, .slick-next:before {
-  font-size: 20px; /* Font size for arrow characters */
-  color: #888888; /* Arrow color */
+.slick-next {
+  right: -20px; /* Position to the right */
+}
+
+/* Hover Effects for Arrows */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #ffffff; /* Darker orange on hover */
+  color: #ffffff; /* Ensure text remains white */
+}
+
+/* Hide default arrow icons */
+.slick-prev::before,
+.slick-next::before {
+  content: ""; /* Remove default arrow icons */
+  display: none; /* Hide them since we're using button content */
+}
+
+/* Custom Arrow Content using Unicode */
+.custom-prev-arrow::before {
+  content: "←"; /* Left arrow symbol */
+  font-size: 20px;
+  color: white;
+}
+
+.custom-next-arrow::before {
+  content: "→"; /* Right arrow symbol */
+  font-size: 20px;
+  color: white;
+}
+
+/* Disable arrows when not needed */
+.slick-prev.disabled,
+.slick-next.disabled {
+  background-color: #f0f0f0; /* Background for disabled state */
+  color: #888888; /* Text color for disabled state */
+  pointer-events: none; /* Disable interaction */
+  opacity: 0.5; /* Visual indication that the button is disabled */
+  cursor: default; /* Default cursor */
 }
 
 /* Additional adjustments for carousel buttons if needed */

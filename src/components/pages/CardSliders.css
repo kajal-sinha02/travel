@@ -17,26 +17,46 @@
 .header-title {
     margin: 0; /* Remove default margin */
     font-size: 24px; /* Adjust font size as needed */
+    color: #333; /* Optional: Set title color */
 }
 
 /* View All Button */
 .view-all-button {
     background-color: white; /* Button background color */
     color: orange; /* Button text color */
-    /* border: 2px solid orange; Border color and thickness */
-    border: transparent;
+    border: transparent; /* Transparent border */
     padding: 10px 15px; /* Padding around the text */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size for the button */
     border-radius: 5px; /* Optional: rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-    margin-right: 0px;
+    margin-right: 0; /* Remove right margin */
 }
 
 /* Hover effects for the button */
 .view-all-button:hover {
-    background-color: rgb(255, 255, 255); /* Background color on hover */
-    color: #FF5733 ; /* Text color on hover */
+    background-color: orange; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Toggle Button */
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 110px; /* Width to make them equal */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    color: #333;
+    border: 2px solid transparent;
+}
+
+/* Active toggle button styling */
+.toggle-button.active {
+    background: #FFFAEC; /* Active button background color */
+    color: orange; /* Active button text color */
 }
 
 /* Styles for the slider container */
@@ -71,6 +91,7 @@
     }
 }
 
+/* Horizontal line styling */
 .horizontal-line {
     height: 1px; /* Height of the line */
     background-color: #EFEFEF; /* Grey color for the line */
@@ -78,14 +99,13 @@
     width: 100%; /* Full width of the container */
 }
 
+/* Gradient Div Styling */
 .gradient-div {
     background: linear-gradient(to bottom, #FFFAEC, white);
     padding: 10px;
     border-radius: 5px;
     text-align: left;
     font-size: 13px;
-   
     width: 100%; /* Adjust width as needed */
     margin: 10px auto; /* Centering the div */
-  }
-  
+}

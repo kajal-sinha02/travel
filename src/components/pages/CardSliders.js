@@ -34,7 +34,7 @@ const CardSliders = ({ images, name }) => {
       {/* Header Section */}
       <div className="header">
         <h1 className="header-title">{name}</h1>
-        <button className="view-all-button">View All &gt;</button>
+        {/* <button className="view-all-button">View All &gt;</button> */}
       </div>
 
       {/* Slider Section */}
@@ -43,7 +43,7 @@ const CardSliders = ({ images, name }) => {
           {images.map((image, index) => (
             <Card key={index} image={image} />
           ))}
-           <div className="gradient-div">5 D Dubai</div>
+           {/* <div className="gradient-div">5 D Dubai</div> */}
         </Slider>
        
       </div>

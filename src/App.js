@@ -19,19 +19,7 @@ function App() {
   
         {/* Conditionally render Destination component or Activities based on the activeTab */}
         {activeTab === "Tours" ? <Destination /> : <div>Activities Content</div>}     
-       {/* Apply the class here */}
-            {/* <CardSlider images={images} name = "Dubai"/>  
-            <CardSlider images={images2} name = "Singapore"/> 
-            <CardSlider images={images3} name = "North East"/> 
-            <CardSlider images={images4} name = "Jaipur"/> 
-            <LogoAnimation></LogoAnimation>
-            <CardSlider images={images5} name = "Kolkata"/> 
-           
-            <CardSlider images={images6} name = "New Delhi"/> 
-            <Slideshow></Slideshow>
-            <CardSlider images={images7} name = "Tamil Nadu"/> 
-            <CardSlider images={images8} name = "Kerela "/> 
-            <CardSlider images={images9} name = "Myanmar"/>   */}
+      
             <CardSliders images ={images} name="Dubai"></CardSliders>
             <CardSliders images ={images} name="Singapore"></CardSliders>
             <CardSliders images ={images} name="China"></CardSliders>
