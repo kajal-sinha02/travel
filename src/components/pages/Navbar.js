@@ -28,15 +28,7 @@ function Navbar() {
 
       {/* Currency and Login */}
       <div className="currency-login">
-        <div className="currency">
-          <img
-            src={flag} /* replace this with the actual path */
-            alt="INR Flag"
-            className="flag-icon"
-          />
-          <span>INR ₹</span>
-          <i className="fa fa-chevron-down"></i> {/* Dropdown icon */}
-        </div>
+        
 
         <div className="login">
           {/* <span>Login</span> */}

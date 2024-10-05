@@ -1,0 +1,153 @@
+/* Card Wrapper */
+.card {
+  width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+/* Banner at the top */
+.card-banner {
+  background-color: #ff5733;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner-text {
+  font-size: 12px;
+}
+
+/* Image section */
+.card-image {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+/* Body content */
+.card-body {
+  padding: 3px;
+}
+
+/* Trip info: days & rating */
+.trip-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating span {
+  margin-left: 5px;
+}
+
+/* Price section */
+.pricing {
+  margin: 15px 0;
+}
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-current {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+
+.discount {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Button */
+.avail-btn {
+  width: 80%;
+  padding: 10px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.avail-btn:hover {
+  background-color: #ff3300;
+}
+
+.avail-btn2 {
+  width: 15%;
+  padding: 10px;
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.avail-btn2:hover {
+  background-color: #ff3300;
+}
+
+/* Heading Styles */
+h3 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #000000;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #666;
+  margin: 5px 0;
+  
+}
+
+.star-icon {
+  color: green; /* Set the color to green */
+  display: inline; /* Ensure it stays inline */
+  font-size: 16px; /* Optional: adjust size if needed */
+}
+
+.button-container {
+  display: flex;              /* Use flexbox for layout */
+  justify-content: space-between; /* Space out buttons */
+  margin: 10px 0;           /* Add some margin for spacing */
+}
+
+.gradient-div {
+  background: linear-gradient(to bottom, lightyellow, white);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left; /* Align text to the left */
+  font-size: 1px;
+  width: 100%; /* Adjust width as needed */
+  margin: 10px auto; /* Centering the div */
+}
+

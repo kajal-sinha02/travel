@@ -1,65 +1,79 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px ;
-    margin-top: 10px;
-    background-color: white;
-  }
-  
-  .logo img {
-    height: 50px; /* Adjust size as necessary */
-    
-  }
-  
-  .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center the items within the search bar */
-    position: absolute;
-    width: 20%; /* Adjust width as needed */
-    left: 50%;  /* Positioning it relative to the viewport */
-    transform: translateX(-50%); /* Centering by shifting it back 50% */
-    /* margin: 10px auto; To center it horizontally */
-    padding: 5px; /* Optional padding */
-  }
-  
-  
-  .search-icon {
-    position: absolute;
-    left: 10px;
-    color: gray;
-  }
-  
-  .search-bar input {
-    width: 100%;
-    padding: 10px 20px;
-    padding-left: 40px; /* Offset for search icon */
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    font-size: 16px;
-  }
-  
-  .currency-login {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between currency and login */
-  }
-  
-  .currency {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .currency .flag-icon {
-    height: 16px;
-    width: 24px; /* Adjust flag size */
-  }
-  
-  .login {
-    font-size: 16px;
-    color: #333;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.logo img {
+  height: 50px; /* Adjust size as necessary */
+  margin-left: 200px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the items within the search bar */
+  position: absolute;
+  width: 20%; /* Adjust width as needed */
+  left: 50%;  /* Positioning it relative to the viewport */
+  transform: translateX(-50%); /* Centering by shifting it back 50% */
+  padding: 5px; /* Optional padding */
+}
+
+.search-icon {
+  margin-left: 15px;
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px; /* Adjusted font size for better readability */
+  padding-left: 40px; /* Offset for search icon */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.1); /* Grey box shadow */
+  outline: none; /* Remove outline on focus */
+}
+
+/* Placeholder styles */
+.search-bar input::placeholder {
+  color: #a0a0a0; /* Placeholder text color */
+  /* font-style: italic; Italic style */
+  margin-left: 20px;
+  font-size: 14px; /* Placeholder text size */
+}
+
+/* Optional: If you want to add a focus style */
+.search-bar input:focus::placeholder {
+  color: transparent; /* Make placeholder invisible on focus (if desired) */
+}
+
+.currency-login {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between currency and login */
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.currency .flag-icon {
+  height: 16px;
+  width: 24px; /* Adjust flag size */
+}
+
+.login {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}

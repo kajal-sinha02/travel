@@ -1,162 +1,115 @@
-
-  
-  .carousel-buttons-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Stack the carousel and buttons vertically */
-    width: 100%;
-    margin-bottom: 10px; /* Reduced space below the wrapper */
-    
-  }
-  
-  .carousel-container {
-    width: 100%; /* Full width of the viewport */
-   
-    border-top: 2px solid #EFEFEF; /* Grey line above */
-    border-bottom: 2px solid #EFEFEF; /* Grey line below */
-    display: flex;
-    justify-content: center; /* Center the carousel content */
-    
-  }
-  
-  .carousel-wrapper {
-    width: 50%; /* Constrain the carousel content to 50% of the screen */
-    position: relative;
-    margin-bottom: -20px;
-    margin-top: 15px;
-  }
-  
-  .slick-prev {
-    left: -90px;
-  margin-left: -40px;
-    background-color: aqua;
-    z-index: 9;
-  }
-  
-  .slick-next {
-    right: 10px;
-    z-index: 1;
-  } 
-  
-  /* Adjusted toggle button styling */
-  .buttons {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    gap: 0; /* Remove gap to make them look like a toggle */
-    margin-top: 80px;
-    margin-bottom: 10px;
-    width: 220px; /* Ensures buttons occupy equal space together */
-    position: absolute; /* Fix the position of the buttons */
-    right: 20px; /* Distance from the right side of the screen */
-    top: 20px; /* Adjust the top position if needed */
+/* Carousel Container */
+.carousel-container {
+  width: 100%; /* Full width of the viewport */
+  display: flex;
+  justify-content: center; /* Center the carousel content */
+  border-top: 2px solid #EFEFEF; /* Grey line above */
+  border-bottom: 2px solid #EFEFEF; /* Grey line below */
 }
 
-  
-  .toggle-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    height: 40px;
-    width: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 110px; /* Width to make them equal */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: white;
-    color: #333;
-    border: 2px solid #F37002;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Left button (Tours) should have rounded left corners */
-  .toggle-button:first-child {
-    border-radius: 5px 5px 5px 5px;
-  }
-  
-  /* Right button (Activities) should have rounded right corners */
-  .toggle-button:last-child {
-    border-radius: 5px 5px 5px 5px;
-  }
-  
-  /* Active button styling */
-  .toggle-button.active {
-    background: #F37002; /* Orange gradient */
-    color: white;
-    z-index: 2;
-  }
-  
-  /* To remove double borders between buttons */
-  .toggle-button:not(:first-child) {
-    margin-left: -2px; /* Overlap border to simulate toggle effect */
-  }
-  
-  .tours-button, .activities-button {
-    padding: 10px 10px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 100px;
-    border-radius: 0px;
-    height: 45px;
-    
-  }
-  
-  /* Carousel item styling */
-  .carousel-item {
-    position: relative;
-    text-align: center;
-
-  }
-  
-  .carousel-item img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .carousel-item p {
-    color: #333;
-    font-weight: 2px;
-    margin-top: 5px;
-    font-size: 12px;
-    display: flex;
-    margin-bottom: 30px;
-    
-  }
-  
-  .trending-badge {
-    background: linear-gradient(45deg, #FFA500, #FF4500);
-    color: white;
-    padding: 2px 10px;
-    font-size: 10px;
-    border-radius: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-bottom: -10px;
-  }
-  
-  .slick-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .slick-prev, .slick-next {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; /* Circular arrows */
-    background-color: #ffffff; /* Light gray background for arrows */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Carousel Wrapper */
+.carousel-wrapper {
+  width: 79%; /* Constrain the carousel content to 80% of the screen */
+  position: relative;
+  margin: 15px 0; /* Centering margins */
 }
+
+/* Carousel Item */
+.carousel-item {
+  position: relative;
+  text-align: center; /* Center text inside the carousel item */
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Style for the images */
+.carousel-item img {
+  width: 50px; /* Set a fixed width for the images */
+  height: 50px; /* Set a fixed height for the images */
+  margin-bottom: 5px; /* Space between image and text */
+  margin-left: 58px
+}
+
+/* Style for the paragraph text */
+.carousel-item p {
+  color: #333; /* Text color */
+font-weight: 500;
+  text-align: center; /* Center the text */
+  font-size: 12px; /* Font size */
+  margin: 0; /* Remove margins for tight spacing */
+  margin-right: 10px;
+}
+
+/* Trending Badge */
+.trending-badge {
+  background: linear-gradient(45deg, #FFA500, #FF4500);
+  color: white;
+  padding: 2px 10px;
+  font-size: 10px;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* SLICK ARROWS STYLES */
+.slick-prev, .slick-next {
+  width: 40px; /* Width for arrow buttons */
+  height: 40px; /* Height for arrow buttons */
+  border-radius: 50%; /* Circular arrows */
+  background-color: #ffffff; /* Background color for arrows */
+  display: flex;
+  justify-content: center; /* Center icon in the button */
+  align-items: center; /* Center icon in the button */
+}
+
 .slick-prev:hover, .slick-next:hover {
-    background-color: #ffffff; /* Darker gray on hover */
+  background-color: #f0f0f0; /* Change background on hover */
 }
 
 .slick-prev:before, .slick-next:before {
-    font-size: 20px; /* Font size for arrow characters */
-    color: #888888; /* Arrow color */
+  font-size: 20px; /* Font size for arrow characters */
+  color: #888888; /* Arrow color */
+}
+
+/* Additional adjustments for carousel buttons if needed */
+.buttons {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 0; /* Remove gap to make them look like a toggle */
+  margin-top: 80px; /* Space above buttons */
+  margin-bottom: 10px; /* Space below buttons */
+}
+
+/* Toggle button styling */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 110px; /* Width to make them equal */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: white;
+  color: #333;
+  border: 2px solid #F37002;
+}
+
+/* Active button styling */
+.toggle-button.active {
+  background: #F37002; /* Active button color */
+  color: white;
+}
+
+/* Style for footer headings */
+h4 {
+  text-align: center; /* Centers the text horizontally */
+  margin: 20px auto; /* Adjusts the margin to center the element */
+  width: 80%; /* Optional: sets a width for better control */
+  line-height: 1.2; /* Adjusts the line height for readability */
+  font-weight: bold;
+  font-size: 14px;
+  color: #B7B7B7;
 }

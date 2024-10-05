@@ -1,67 +1,73 @@
 .slideshow-container {
-    position: relative;
-    max-width: 800px;
-    height: 500px;
+  position: relative;
+  width: 1100px; /* Width of the slideshow */
+  height: 300px; /* Height of the slideshow */
+  margin: auto; /* Center the slideshow on the page */
+  overflow: hidden; /* Hide any overflow content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-    margin: auto;
-  }
-  
-  .slides img {
-    width: 100%;
- height: 350px;
-    display: block;
-  }
-  
- 
-  
-  .prev, .next {
-    cursor: pointer;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.6s ease;
-    user-select: none;
-    border-radius: 0px;
-    border-color: transparent;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: transparent;
-  }
-  
-  .dots {
-    text-align: center;
-    padding: 16px;
-    position: relative;
-    bottom: 0;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .dot.active, .dot:hover {
-    background-color: #717171;
-  }
-  
+.slides {
+  display: flex; /* Use flexbox for slides */
+  transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.slides img {
+  width: 1100px; /* Make the image take the full width */
+  height: 300px; /* Make the image take the full height */
+  object-fit: cover; /* Ensure the image covers the entire div */
+  display: block; /* Ensure no extra space below the image */
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  width: auto;
+  padding: 16px;
+  color: #fff; /* White text for contrast */
+  font-weight: bold;
+  font-size: 24px;
+  border: none; /* Remove default border */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Circular buttons */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  transform: translateY(-50%); /* Center the buttons */
+}
+
+.prev {
+  left: 10px; /* Position from the left */
+}
+
+.next {
+  right: 10px; /* Position from the right */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+
+.dots {
+  text-align: center;
+  padding: 16px;
+  position: absolute;
+  bottom: 10px; /* Position dots near the bottom */
+  left: 0;
+  right: 0; /* Center the dots horizontally */
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px; /* Add space between dots */
+  background-color: #bbb; /* Default dot color */
+  border-radius: 50%; /* Circular dots */
+  display: inline-block;
+  transition: background-color 0.6s ease; /* Smooth transition for color */
+}
+
+.dot.active, .dot:hover {
+  background-color: #717171; /* Darker color for active and hovered dots */
+}

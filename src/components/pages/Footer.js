@@ -9,9 +9,9 @@ const Footer = () => {
           <h3>ABOUT THRILLOPHILIA</h3>
           <ul>
             <li>About Us</li>
-            <li>We Are Hiring</li>
+            {/* <li>We Are Hiring</li> */}
             <li>Thrillophilia Reviews</li>
-            <li>Terms & Conditions</li>
+            {/* <li>Terms & Conditions</li> */}
             <li>Privacy Policies</li>
             <li>Copyright Policies</li>
             <li>Support</li>
