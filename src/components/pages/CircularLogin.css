@@ -1,0 +1,36 @@
+.login-icon {
+    width: 40px;              /* Width of the icon */
+    height: 40px;             /* Height of the icon */
+    border-radius: 50%;       /* Makes it circular */
+    background-color: #ffffff; /* Background color */
+    display: flex;            /* Center the icon vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;          /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+    border: 2px solid black;  /* Added black border */
+}
+
+.login-icon:hover {
+    background-color: #f0f0f0; /* Light grey on hover instead of blue */
+}
+
+.login-button {
+    position: absolute;      /* Absolute positioning for button */
+    top: 50px;              /* Adjust to place it below the icon */
+    left: 50%;              /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    padding: 10px 20px;     /* Padding for the button */
+    background-color: #f7f7f7; /* Button color */
+    color: black;           /* Changed text color to black */
+    border: none;           /* Removed border */
+    border-radius: 5px;     /* Rounded corners */
+    cursor: pointer;        /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth background color transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grey shadow */
+}
+
+.login-button:hover {
+    background-color: #e0e0e0; /* Light grey on hover instead of blue */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}

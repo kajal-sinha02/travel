@@ -1,13 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
+// Destination.js
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "./Destination.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; 
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Using React Icons
 
 const Destination = () => {
-  const sliderRef = useRef(null); // Reference to the slider
-  const slidesToShow = 7; // Number of slides to show
-  const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slidesToShow = 7;
 
-  // Sample data for carousel items
   const carouselItems = [
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "AbuDhabi" },
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Dubai" },
@@ -17,37 +20,41 @@ const Destination = () => {
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Manama" },
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Muscat" },
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Kuwait City" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Doha 2" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Riyadh 2" },
     // Add more items as needed...
   ];
 
   // Custom Previous Arrow Component
   const CustomPrevArrow = (props) => {
-    const { className, onClick, currentSlide } = props;
-    // Disable the Prev button if on the first slide
+    const { className, onClick } = props;
     const isDisabled = currentSlide === 0;
+
     return (
       <button
-        className={`slick-prev ${isDisabled ? "disabled" : ""} custom-prev-arrow`}
+        className={`custom-prev-arrow ${isDisabled ? "disabled" : ""}`}
         onClick={onClick}
         aria-label="Previous Slide"
+        disabled={isDisabled}
       >
-        {/* Optional: You can use icons or text here */}
+        <FaChevronLeft />
       </button>
     );
   };
 
   // Custom Next Arrow Component
   const CustomNextArrow = (props) => {
-    const { className, onClick, slideCount } = props;
-    // Disable the Next button if on the last possible slide
-    const isDisabled = currentSlide >= slideCount - slidesToShow;
+    const { className, onClick } = props;
+    const isDisabled = currentSlide >= carouselItems.length - slidesToShow;
+
     return (
       <button
-        className={`slick-next ${isDisabled ? "disabled" : ""} custom-next-arrow`}
+        className={`custom-next-arrow ${isDisabled ? "disabled" : ""}`}
         onClick={onClick}
         aria-label="Next Slide"
+        disabled={isDisabled}
       >
-        {/* Optional: You can use icons or text here */}
+        <FaChevronRight />
       </button>
     );
   };
@@ -58,21 +65,10 @@ const Destination = () => {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    arrows: carouselItems.length > slidesToShow, // Show arrows only if needed
-    prevArrow: (
-      <CustomPrevArrow
-        currentSlide={currentSlide}
-      />
-    ),
-    nextArrow: (
-      <CustomNextArrow
-        currentSlide={currentSlide}
-        slideCount={carouselItems.length}
-      />
-    ),
-    beforeChange: (current, next) => {
-      setCurrentSlide(next);
-    },
+    arrows: true,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
+    afterChange: (current) => setCurrentSlide(current),
     responsive: [
       {
         breakpoint: 1024,

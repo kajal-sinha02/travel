@@ -1,5 +1,6 @@
 // CardSliders.js
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import Slider from "react-slick";
 import "./CardSliders.css";
 import Card from "./Card";
@@ -34,7 +35,8 @@ const CardSliders = ({ images, name }) => {
       {/* Header Section */}
       <div className="header">
         <h1 className="header-title">{name}</h1>
-        {/* <button className="view-all-button">View All &gt;</button> */}
+        {/* Update button to use Link */}
+        <Link to={`/view`} className="view-all-button">View All &gt;</Link>
       </div>
 
       {/* Slider Section */}
@@ -43,33 +45,11 @@ const CardSliders = ({ images, name }) => {
           {images.map((image, index) => (
             <Card key={index} image={image} />
           ))}
-           {/* <div className="gradient-div">5 D Dubai</div> */}
         </Slider>
-       
       </div>
       <div className="horizontal-line"></div>
     </div>
   );
 };
-
-// Custom Next Arrow
-function SampleNextArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <div className={`${className} arrow`} onClick={onClick}>
-      &gt;
-    </div>
-  );
-}
-
-// Custom Prev Arrow
-function SamplePrevArrow(props) {
-  const { className, onClick } = props;
-  return (
-    <div className={`${className} arrow`} onClick={onClick}>
-      &lt;
-    </div>
-  );
-}
 
 export default CardSliders;

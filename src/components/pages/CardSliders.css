@@ -1,6 +1,7 @@
 /* Slider wrapper to center align the slider */
 .slider-wrapper {
-    width: 1100px; /* Adjust based on your design */
+    max-width: 1100px; /* Maximum width for large screens */
+    width: 100%; /* Full width for responsiveness */
     margin: 0 auto; /* Center the container */
     padding: 20px;
 }
@@ -8,7 +9,7 @@
 /* Header styling */
 .header {
     display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between title and button */
+    justify-content: space-between; /* Ensure title on left and button on right */
     align-items: center; /* Center align items vertically */
     margin-bottom: 20px; /* Space below the header */
 }
@@ -22,21 +23,22 @@
 
 /* View All Button */
 .view-all-button {
-    background-color: white; /* Button background color */
+    background-color: transparent;
     color: orange; /* Button text color */
+    font-weight: bold;
     border: transparent; /* Transparent border */
     padding: 10px 15px; /* Padding around the text */
     cursor: pointer; /* Pointer cursor on hover */
     font-size: 16px; /* Font size for the button */
     border-radius: 5px; /* Optional: rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-    margin-right: 0; /* Remove right margin */
+    text-decoration: none;
+    /* transition: background-color 0.3s, color 0.3s; Smooth transition for hover effect */
 }
 
 /* Hover effects for the button */
 .view-all-button:hover {
-    background-color: orange; /* Background color on hover */
-    color: white; /* Text color on hover */
+    background-color: transparent;/* Background color on hover */
+    color: #FF5733; /* Text color on hover */
 }
 
 /* Toggle Button */

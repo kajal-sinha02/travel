@@ -1,0 +1,83 @@
+.gridT {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-bottom: 100px;
+   
+}
+
+.travels-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns by default */
+    grid-auto-rows: 200px; /* Default height for non-featured grid items reduced */
+    gap: 10px;
+}
+
+.travels {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    height: 100%; /* Ensure it takes the full row height */
+}
+
+.travels img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Featured travel (Europe) */
+.featured {
+    grid-column: span 2; /* Span two columns */
+    grid-row: span 2;    /* Span two rows */
+    height: 400px; /* Height for featured item remains larger */
+}
+
+/* Non-featured travels (Greece, France, etc.) */
+.travels:not(.featured) {
+    height: 190px; /* Reduced height for the non-featured items */
+}
+
+.travels-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 5px 0 0;
+    font-size: 18px;
+}
+
+/* Tablet layout */
+@media (max-width: 768px) {
+    .travels-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet */
+    }
+
+    .featured {
+        grid-column: span 2;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+    .travels-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .featured {
+        grid-column: span 1;
+    }
+}
+
+.gridT h1{
+text-align: left;
+}

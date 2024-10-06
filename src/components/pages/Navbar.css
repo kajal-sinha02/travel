@@ -59,6 +59,7 @@
   display: flex;
   align-items: center;
   gap: 20px; /* Space between currency and login */
+  padding-right: 100px;
 }
 
 .currency {
