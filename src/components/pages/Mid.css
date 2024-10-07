@@ -1,5 +1,5 @@
 .travel-planner {
-    background-image: url('https://media1.thrillophilia.com/filestore/92kuxdroezacrbdt5lbimd46je4m_shutterstock_2498028977.jpg?w=1536&dpr=1.3');
+    background-image: url('https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvZXhwZXJpZW5jZXMvMTY2NDg0NzU4MDM4MTI5MjgxOTk3NjgwNjY0MDYyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTUwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6ImNvdmVyIn19fQ==');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -244,3 +244,15 @@
  
   
   /* Checkbox and label focus state */
+
+  .montserrat-travel h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;    
+  }

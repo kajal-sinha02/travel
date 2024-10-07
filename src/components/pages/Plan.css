@@ -1,0 +1,66 @@
+/* WhyPlanWithUs.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap'); /* Google Font Import */
+
+.container-plan {
+    padding-left: 120px;
+    height: 400px;
+  margin: 0 auto;
+  text-align: left;        /* Align text to the left */
+  font-family: 'Nunito', sans-serif; /* Added font family */
+}
+
+h2 {
+  text-align: left;      /* Center-align heading */
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.features-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.feature-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.feature-text {
+  text-align: left;        /* Ensure text is aligned left */
+}
+
+.feature-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: 600;        /* Bold headings */
+}
+
+.feature-item p {
+  font-size: 0.9em;
+  color: #555;
+  font-weight: 400;  
+  text-align: left;      /* Regular weight for paragraphs */
+}
+
+
+.plan-heading {
+    font-size: 30px;
+    text-align: left; /* Align text to the left */
+    width: 100%;      /* Ensure it takes up the full row width */
+    margin-bottom: 20px; /* Add some spacing below */
+    font-weight: bold;
+  }
+  

@@ -5,13 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
 import Navbar from "./components/pages/Navbar";
-import { images } from '../src/array/imageData';
+import { images , images2} from '../src/array/imageData';
 import Footer from "./components/pages/Footer";
 import LogoAnimation from "./components/pages/LogoAnimation";
 import Slideshow from "./components/pages/Slideshow";
 import CardSliders from "./components/pages/CardSliders";
-
+import Work from "./components/pages/Work"
 import ViewAll from "./components/pages/ViewAll";
+import Home from "./components/pages/Home";
 
 function App() {
   const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
@@ -23,30 +24,11 @@ function App() {
 
         <Routes> {/* Change here from <Switch> to <Routes> */}
           {/* Route for the main page */}
-          <Route path="/" element={
-            <>
-              {/* Conditionally render Destination component or Activities based on the activeTab */}
-              <Navbar />
-              {activeTab === "Tours" ? <Destination /> : <div>Activities Content</div>}
-
-              {/* Multiple CardSliders */}
-              <CardSliders images={images} name="Dubai" />
-              <CardSliders images={images} name="Singapore" />
-              <CardSliders images={images} name="China" />
-              <CardSliders images={images} name="Jaipur" />
-              <Slideshow />
-              <CardSliders images={images} name="Haryana" />
-              <CardSliders images={images} name="Ladakh" />
-              <CardSliders images={images} name="Kashmir" />
-              <LogoAnimation />
-              <CardSliders images={images} name="Kerala" />
-              <CardSliders images={images} name="Bihar" />
-              <Footer />
-            </>
-          }/>
+          <Route path="/" element={<Home/>}/>
 
           {/* Route for AllCards page */}
           <Route path="/view" element={<ViewAll />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
 
       

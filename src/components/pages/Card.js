@@ -5,9 +5,9 @@ const Card = ({image}) => {
   return (
     <div className="card">
       <div className="card-banner">
-        <div className="banner-text">
+        {/* <div className="banner-text">
           THRILL FEST | Get Up To 3 International Trips Free!
-        </div>
+        </div> */}
       </div>
       <img
         src="https://media1.thrillophilia.com/filestore/4cgc0ibn1rqwvli84izupxwe45nv_shutterstock_2384596901%20(1).jpg?w=360&dpr=2" // Replace with the actual path to your image
@@ -25,9 +25,9 @@ const Card = ({image}) => {
             <span>(1.6k)</span>
           </div>
         </div>
-        <h3>{image.title}</h3>
+        <div classname="cardslider-heading">{image.title}</div>
         
-        <div className="gradient-div">5 D Dubai</div>
+        <div className="gradient-div"><p style={{fontSize:"15px"}}>5 D Dubai</p></div>
         <div className="pricing">
           <div className="price-info">
             <span className="price-current">INR 45,000</span>

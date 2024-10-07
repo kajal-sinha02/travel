@@ -1,26 +1,36 @@
-import React from 'react'
-import Mid from './Mid'
-import Navbar from './Navbar'
-import { images } from '../../array/imageData';
+import React from "react";
+import Mid from "./Mid";
+import Navbar from "./Navbar";
+import { images } from "../../array/imageData";
 import CardSliders from "./CardSliders";
-import Footer from './Footer';
-import GridTravel from './GridTravel';
-
+import Footer from "./Footer";
+import GridTravel from "./GridTravel";
+import TravelCards from "./TravelCards";
+import TravelCard2 from "./TravelCard2";
 const ViewAll = () => {
   return (
     <>
-    <Navbar></Navbar>
-    <Mid></Mid>
-    <CardSliders images={images} name= "Best Deals" />
-    <CardSliders images={images} name="Family Tours" />
-    <GridTravel title="Dubai Delights | Crossroad Cultures of the Middle East"></GridTravel>
-    <CardSliders images={images} name="Popular Destinations" />
-    <CardSliders images={images} name="Dubai" />
-   <GridTravel title="Plan your trip to anywhere in the world"></GridTravel>
-    <Footer></Footer>
-    </>
-    
-  )
-}
+      <Navbar></Navbar>
+      <Mid></Mid>
+      <CardSliders images={images} name="Best Deals" />
+      <TravelCards heading="Top countries to visit in Europe"></TravelCards>
+      <CardSliders images={images} name="Dubai" />
+      <CardSliders images={images} name="Singapore" />
+      <TravelCard2  heading="Plan as per the best destinations in India"></TravelCard2>
+      <CardSliders images={images} name="China" />
+      <CardSliders images={images} name="Jaipur" />
 
-export default ViewAll
+      <CardSliders images={images} name="Family Tours" />
+      <GridTravel title="Dubai Delights | Crossroad Cultures of the Middle East"></GridTravel>
+      <TravelCards heading="Top countries to visit in Asia"></TravelCards>
+      <CardSliders images={images} name="Popular Destinations" />
+
+      <GridTravel title="Plan trip as per mood"></GridTravel>
+      <CardSliders images={images} name="Dubai" />
+     
+      <Footer></Footer>
+    </>
+  );
+};
+
+export default ViewAll;

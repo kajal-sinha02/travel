@@ -14,10 +14,33 @@ const GridTravel = ({title}) => {
           image: 'https://media1.thrillophilia.com/filestore/20jj8vbfxjl48ovkqaqyd1uo0t07_Dubai%20Gallery-1.jpg?w=1536&dpr=1.3', // Replace with actual image URL
         },
         {
-          name: 'France',
+          name: 'Singapore',
           tagline: 'Gourmet Haven',
-          image: 'https://media1.thrillophilia.com/filestore/plo8mfkpn40x6t8w3vzypnje6fnx_shutterstock_2042237531.jpg?w=240&dpr=2', // Replace with actual image URL
+          image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY291bnRyaWVzLzE2ODQ0MjI1NTU4ODA3Njk0OTExOTU2Nzg3MTA5NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo5MDAsImZpdCI6ImNvdmVyIn19fQ==', // Replace with actual image URL
         },
+        {
+            name: 'France',
+            tagline: 'Gourmet Haven',
+            image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY291bnRyaWVzLzE2ODQ0MjQ3NDYwNzI3OTQxOTg5ODk4NjgxNjQwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo5MDAsImZpdCI6ImNvdmVyIn19fQ==', // Replace with actual image URL
+          },
+          {
+            name: 'France',
+            tagline: 'Gourmet Haven',
+            image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY291bnRyaWVzLzE2ODQ0MTk3NjE4OTYyMDM3NTYzMzIzOTc0NjA5NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo5MDAsImZpdCI6ImNvdmVyIn19fQ==', // Replace with actual image URL
+          },
+          {
+            name: 'France',
+            tagline: 'Gourmet Haven',
+            image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY291bnRyaWVzLzE2ODQ0MTk3NjE4OTYyMDM3NTYzMzIzOTc0NjA5NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo5MDAsImZpdCI6ImNvdmVyIn19fQ==', // Replace with actual image URL
+          },
+          {
+            name: 'France',
+            tagline: 'Gourmet Haven',
+            image: 'https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvY291bnRyaWVzLzE2ODQ0MTk3NjE4OTYyMDM3NTYzMzIzOTc0NjA5NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgwMCwiaGVpZ2h0Ijo5MDAsImZpdCI6ImNvdmVyIn19fQ==', // Replace with actual image URL
+          },
+          
+          
+        
     ];
 
     return (
@@ -27,7 +50,7 @@ const GridTravel = ({title}) => {
                 {travels.map((travel, index) => (
                     <div className={`travels ${index === 0 ? 'featured' : ''}`} key={travel.name}>
                         <img src={travel.image} alt={travel.name} />
-                        <div className="travels-text">
+                        <div className="montserrat-travel">
                             <h2>{travel.name}</h2>
                             <p>{travel.tagline}</p>
                         </div>

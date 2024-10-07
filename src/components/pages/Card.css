@@ -5,20 +5,19 @@
   overflow: hidden;
   font-family: 'Arial', sans-serif;
   background-color: #fff;
+  gap: 10px;
 }
 
 /* Banner at the top */
 .card-banner {
-  background-color: #ff5733;
-  padding: 10px;
+
+  padding: 0px;
   text-align: center;
   color: #fff;
   font-weight: bold;
 }
 
-.banner-text {
-  font-size: 12px;
-}
+
 
 /* Image section */
 .card-image {
@@ -151,3 +150,7 @@ h5 {
   margin: 10px auto; /* Centering the div */
 }
 
+
+.cardslider-heading{
+  margin-top: 10px;
+}

@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center; /* Center the items within the search bar */
   position: absolute;
-  width: 20%; /* Adjust width as needed */
+  width: 45%; /* Adjust width as needed */
   left: 50%;  /* Positioning it relative to the viewport */
   transform: translateX(-50%); /* Centering by shifting it back 50% */
   padding: 5px; /* Optional padding */

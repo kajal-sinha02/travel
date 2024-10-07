@@ -22,7 +22,7 @@ function Navbar() {
         </div>
         <input
           type="text"
-          placeholder="Search for Destinations"
+          placeholder="Where do you want to go?"
           className="search-input"
         />
       </div>

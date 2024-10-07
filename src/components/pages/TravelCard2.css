@@ -1,0 +1,158 @@
+/* Container for the travel cards */
+.travel-cards-container1 {
+margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the container */
+    flex-wrap: wrap; /* Allow wrapping for responsive design */
+    gap: 20px; /* Gap between cards */
+    margin: 20px 0; /* Margin for spacing */
+    padding: 0 20px; /* Padding for the container */
+    position: relative; /* Make the container a positioning context */
+    margin-bottom: 100px;
+  }
+  
+  /* Heading positioned at the top left of the container */
+  .travel-cards-container1 h2 {
+    margin-bottom: 100px;
+    position: absolute; /* Position the heading absolutely within the container */
+    top: 10px; /* Align to the top */
+    left: 20px; /* Align to the left */
+    margin: 0; /* Remove any default margin */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the heading bold */
+    color: #333; /* Set the text color */
+    z-index: 2; /* Ensure it stays above other content */
+  }
+  /* Individual travel card */
+  .travel-card2 {
+    position: relative;
+    width: 175px; /* Width of each card */
+    height: 250px; /* Height of each card */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px; /* Padding for content */
+    background-size: cover; /* Ensure background image covers the card */
+    background-position: center; /* Center the background image */
+    transition: transform 0.3s ease-in-out; /* Transition effect */
+  }
+  
+  /* Gradient effect on hover */
+  .travel-card2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%; /* Only cover the bottom half */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+    z-index: 0;
+  }
+  
+  .travel-card2:hover::after {
+    opacity: 1; /* Show gradient on hover */
+  }
+  
+  /* Card content */
+  .card-content {
+    
+    padding: 10px;
+    position: relative; /* Position relative for button placement */
+    z-index: 1; /* Ensure content is above the gradient overlay */
+    margin-top: auto; /* Push content to the bottom */
+    margin-bottom: 18px;
+  }
+  
+  /* Place name and price */
+  .card-content h3, 
+  .card-content p {
+    margin: 0; /* Remove default margins */
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Plan a Trip button */
+  .plan-trip {
+    position: absolute;
+    bottom: -50px; /* Initially hidden below the card */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 80%; /* Smaller width for the button */
+    padding: 8px 0; /* Adjust padding for button */
+    background-color: #ffd700; /* Yellow color for the button */
+    color: black; /* Black text color */
+    border: none;
+    border-radius: 10px; /* Rounded button */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: bottom 0.3s ease-in-out; /* Smooth transition */
+    z-index: 2; /* Ensure it stays above the gradient */
+    margin-bottom: 10px;
+  }
+  
+  /* Plan a Trip button on hover (explicitly set background to prevent color change) */
+  .plan-trip:hover {
+    background-color: #ffd700; /* Keep the same yellow color */
+  }
+  
+  /* Show the button on hover */
+  .travel-card2:hover .plan-trip {
+    bottom: 0; /* Move into view on hover */
+  }
+  
+  
+  /* Best time badge */
+  .best-time {
+    position: absolute;
+    border-radius: 20px;
+    top: 10px; /* Align it with the top */
+    left: 10px; /* Align it with the left */
+    background-color: #000;
+    color: white;
+    padding: 5px 10px;
+    border-bottom-right-radius: 10px; /* Rounded bottom right corner */
+    font-size: 12px;
+    z-index: 1; /* Ensure it stays above the content */
+  }
+  
+  /* Card image effects */
+  .travel-card:hover .card-content {
+    transform: translateY(-20px); /* Move content up on hover */
+  }
+  
+  .heading {
+    margin-bottom: 100px;
+    
+    top: 10px; /* Align to the top */
+    left: 20px; /* Align to the left */
+    margin: 0; /* Remove any default margin */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the heading bold */
+    color: #333; /* Set the text color */
+    padding-left: 120px;
+    
+  
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .travel-card {
+      width: 200px; /* Adjust card width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .travel-card {
+      width: 150px; /* Further adjust for very small screens */
+    }
+  }
+  

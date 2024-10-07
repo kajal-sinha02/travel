@@ -6,19 +6,29 @@ const Mid = () => {
     <>
       <div className="travel-planner">
         <div className="overlay">
-          <div className="contentt">
-            <h1>Effortless Travel Planning! Let AI Be Your Expert Guide.</h1>
-            <p style={{fontSize : '20px'}}>
-              Bid farewell to generic holiday packages. <br></br>Get Your AI-Personalised
-              Itineraries
+          <div
+            className="contentt"
+            style={{
+              fontFamily: '"Montserrat", sans-serif', // Montserrat font inline style
+              fontWeight: 400, // Optional: Adjust the weight
+              fontOpticalSizing: "auto", // Optional: Optical sizing
+            }}
+          >
+            <h1>
+              Effortless Travel Planning!<br></br> Let AI Be Your Expert Guide.
+            </h1>
+
+            <p style={{ fontSize: "20px" }}>
+              Bid farewell to generic holiday packages. <br></br>Get Your
+              AI-Personalised Itineraries
             </p>
             <button type="submit" className="btn-continue2">
-            Plan Itinerary For Free!
-              </button>
+              Plan Itinerary !
+            </button>
             {/* <button className="btn-plan">Plan Itinerary For Free!</button> */}
           </div>
 
-          <div className="form-container">
+          {/* <div className="form-container">
             <h3>Get your free travel plan now</h3>
 
             <form className="travel-form">
@@ -27,7 +37,6 @@ const Mid = () => {
                 type="text"
                 id="departure"
                 placeholder="Departing from"
-             
                 readOnly
               />
 
@@ -53,7 +62,7 @@ const Mid = () => {
                 Continue
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* <footer className="features">
