@@ -1,0 +1,173 @@
+/* Overlay styles */
+.login-page__overlay {
+    position: fixed; /* Position fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Container for the whole login page */
+.login-page__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Ensure no extra padding */
+    margin: 0;  /* Remove default margin */
+    height: 400px;
+}
+
+/* The login box: ensures the content is aligned and centered */
+.login-page__box {
+    display: flex;
+
+    width: 100%; /* Same as the outer container */
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    height: 100%; /* Ensure the inner content takes up the full height */
+}
+
+/* Left side with background image */
+.login-page__left {
+    background-image: url('https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvd2Vic2l0ZS9sb2dpbi1iYWNrZ3JvdW5kLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciJ9fX0=');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    width: 50%; /* Use half of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the left content also matches the height */
+}
+
+/* List of features on the left side */
+.login-page__features {
+    list-style: none;
+}
+
+.login-page__feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-page__feature img {
+    margin-right: 10px;
+}
+
+.login-page__feature p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Right side of the login page */
+.login-page__right {
+    position: relative; /* Set to relative for positioning close button */
+    padding: 30px;
+    width: 50%; /* The other half of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the top */
+    height: 100%; /* Matches the height of the container */
+}
+
+/* Header section on the right side */
+.login-page__header {
+    margin-bottom: 20px; /* Adjust the margin for spacing */
+}
+
+.login-page__header h2 {
+    margin: 0; /* Remove default margin for heading */
+    padding: 0; /* Remove any padding */
+}
+
+/* Form layout */
+.login-page__form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input group styling */
+.login-page__input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+/* Input styles */
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Checkbox group styling */
+.login-page__checkbox-group {
+    display: flex;                /* Use flexbox for alignment */
+    align-items: center;         /* Center items vertically */
+    margin-bottom: 20px;         /* Space below the checkbox group */
+}
+
+/* OTP button styles */
+.login-page__otp-btn {
+    font-weight: bold;
+    padding: 7px;
+    font-size: 13px;
+    background-color: yellow;
+    border: 2px solid black; /* Updated to include a 2px solid black border */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* OTP button hover effect */
+.login-page__otp-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Link styles */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Close button styling */
+.login-page__close-btn {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    background: transparent; /* No background */
+    border: none; /* Remove border */
+    font-size: 24px; /* Size of the cross */
+    color: black; /* Color of the cross */
+    cursor: pointer; /* Cursor changes to pointer */
+}
+
+/* Optional: Hover effect for the close button */
+.login-page__close-btn:hover {
+    color: red; /* Change color on hover */
+}

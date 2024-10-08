@@ -3,6 +3,7 @@ import './Navbar.css'; // Link to external CSS for styling
 import tlogo from '../../assets/images/tlogo.avif';
 import flag from '../../assets/images/IndianFlag.png';
 import CircularLogin from './CircularLogin';
+import Login from './Login';
 function Navbar() {
   return (
     <div className="navbar">
@@ -29,8 +30,7 @@ function Navbar() {
 
       {/* Currency and Login */}
       <div className="currency-login">
-                
-                <CircularLogin/> {/* Replace the login span with the circular component */}
+                <Login></Login>
             </div>
     </div>
   );

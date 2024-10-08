@@ -1,10 +1,13 @@
 import React from "react";
 import "./Mid.css";
 
-const Mid = () => {
+const Mid = ({ backgroundImage }) => {
   return (
     <>
-      <div className="travel-planner">
+      <div className="travel-planner"         style={{
+          backgroundImage: `url(${backgroundImage})`, // Set background image via prop
+        }}
+>
         <div className="overlay">
           <div
             className="contentt"
@@ -18,7 +21,7 @@ const Mid = () => {
               Effortless Travel Planning!<br></br> Let AI Be Your Expert Guide.
             </h1>
 
-            <p style={{ fontSize: "20px" }}>
+            <p style={{ fontSize: "20px" ,color:"white" , fontWeight:"bold"}}>
               Bid farewell to generic holiday packages. <br></br>Get Your
               AI-Personalised Itineraries
             </p>

@@ -17,6 +17,7 @@ import TravelCard2 from "./TravelCard2";
 import TravelCards from "./TravelCards";
 import Plan from "./Plan";
 import CommunityReviews from "./CommunityReviews";
+import Login from "./Login";
 const Home = () => {
     const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
 
@@ -26,7 +27,7 @@ const Home = () => {
               {activeTab === "Tours" ? <Destination /> : <div>Activities Content</div>}
 
               {/* Multiple CardSliders */}
-              <Work></Work>
+             <Work></Work>
              <TravelCard2  heading="Plan as per the best destinations in India"></TravelCard2>
              <TravelCards  heading="Top countries to visit in Europe"></TravelCards>
              <TravelCards  heading="Top countries to visit in Asia"></TravelCards>
@@ -34,6 +35,8 @@ const Home = () => {
              <Plan></Plan>
              <CardSliders images={images} name="Dubai" />
              <CommunityReviews></CommunityReviews>
+             
+             {/* <Login></Login> */}
              <Footer></Footer>
               {/* <CardSliders images={images} name="Dubai" />
               <CardSliders images={images2} name="Singapore" />

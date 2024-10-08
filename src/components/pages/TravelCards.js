@@ -1,6 +1,6 @@
 import React from 'react';
 import './TravelCards.css'; // Import the CSS file
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 const TravelCard = ({ imgSrc, country, price, bestTime , heading }) => {
   return (
     <>
@@ -11,7 +11,8 @@ const TravelCard = ({ imgSrc, country, price, bestTime , heading }) => {
         <h3>{country}</h3>
         <p>From ₹{price} - per day</p>
       </div>
-      <button className="plan-trip">Plan a Trip</button>
+      <Link to="/planDetails"><button className="plan-trip">Plan a Trip</button></Link>
+      
     </div>
     </>
   );

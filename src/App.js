@@ -13,7 +13,8 @@ import CardSliders from "./components/pages/CardSliders";
 import Work from "./components/pages/Work"
 import ViewAll from "./components/pages/ViewAll";
 import Home from "./components/pages/Home";
-
+import PlanTrip from "./components/pages/PlanTrip";
+import PlanDetails from "./components/pages/PlanDetails"
 function App() {
   const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
 
@@ -29,6 +30,8 @@ function App() {
           {/* Route for AllCards page */}
           <Route path="/view" element={<ViewAll />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/planTrip" element={<PlanTrip />} />
+          <Route path="/planDetails" element={<PlanDetails />} />
         </Routes>
 
       

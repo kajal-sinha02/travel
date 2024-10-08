@@ -35,7 +35,7 @@ const CommunityReviews = () => {
 
   return (
     <div className="community-container">
-      <h2>Happy Community of The Tarzan Way</h2>
+      <h1>Happy Community of The Tarzan Way</h1>
       <div className="review-grid">
         {reviews.map((review, index) => (
           <div key={index} className="review-card">

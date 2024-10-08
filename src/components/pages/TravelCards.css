@@ -18,7 +18,7 @@
   top: 10px; /* Align to the top */
   left: 20px; /* Align to the left */
   margin: 0; /* Remove any default margin */
-  font-size: 24px; /* Adjust the font size as needed */
+  font-size: 27px; /* Adjust the font size as needed */
   font-weight: bold; /* Make the heading bold */
   color: #333; /* Set the text color */
   z-index: 2; /* Ensure it stays above other content */
@@ -135,7 +135,7 @@
   top: 10px; /* Align to the top */
   left: 20px; /* Align to the left */
   margin: 0; /* Remove any default margin */
-  
+  font-size: 27px;
   font-weight: bold; /* Make the heading bold */
   color: #000000; /* Set the text color */
   padding-left: 120px;

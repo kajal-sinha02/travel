@@ -1,6 +1,6 @@
 import React from "react";
 import './Work.css'; // Importing CSS for styling
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 const Work = () => {
   return (
     <div className="how-it-works">
@@ -45,9 +45,11 @@ const Work = () => {
 
         
       </div>
-      <div className="cta-container">  {/* Added wrapper div for button */}
+      <Link to="/planTrip" style={{textDecorationLine:"none"}}><div className="cta-container">  {/* Added wrapper div for button */}
         <button className="cta-button">Plan Itinerary</button>
-      </div>
+      </div></Link>
+
+      
     </div>
   );
 }
