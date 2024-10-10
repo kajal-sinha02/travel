@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px;
+  padding: 7px 20px; /* Default padding */
   margin-top: 15px;
   background-color: white;
   margin-bottom: 5px;
@@ -10,22 +10,19 @@
 
 .logo img {
   height: 50px; /* Adjust size as necessary */
-  margin-left: 115px;
+  margin-left: 20px; /* Adjust margin for logo */
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   justify-content: center; /* Center the items within the search bar */
-  position: absolute;
+  position: relative; /* Use relative positioning for better layout */
   width: 45%; /* Adjust width as needed */
-  left: 50%;  /* Positioning it relative to the viewport */
-  transform: translateX(-50%); /* Centering by shifting it back 50% */
   padding: 5px; /* Optional padding */
 }
 
 .search-icon {
-  margin-left: 15px;
   position: absolute;
   left: 10px;
   color: gray;
@@ -45,8 +42,6 @@
 /* Placeholder styles */
 .search-bar input::placeholder {
   color: #a0a0a0; /* Placeholder text color */
-  /* font-style: italic; Italic style */
-  margin-left: 20px;
   font-size: 14px; /* Placeholder text size */
 }
 
@@ -59,7 +54,7 @@
   display: flex;
   align-items: center;
   gap: 20px; /* Space between currency and login */
-  padding-right: 115px;
+  margin-right: 20px; /* Adjust right margin */
 }
 
 .currency {
@@ -77,4 +72,46 @@
   font-size: 16px;
   color: #333;
   cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 7px 10px; /* Reduce padding for tablets */
+  }
+
+  .search-bar {
+    width: 60%; /* Increase search bar width for tablets */
+  }
+
+  .currency-login {
+    margin-right: 10px; /* Adjust margin for currency and login */
+  }
+
+  .logo img {
+    height: 40px; /* Adjust logo size for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically for mobile */
+    align-items: flex-start; /* Align items to start */
+    padding: 10px; /* Further reduce padding for mobile */
+  }
+
+  .logo img {
+    height: 35px; /* Further adjust logo size for mobile */
+    margin-left: 10px; /* Adjust margin for mobile */
+  }
+
+  .search-bar {
+    width: 100%; /* Full width search bar for mobile */
+    margin-top: 10px; /* Space above search bar */
+  }
+
+  .currency-login {
+    margin-right: 0; /* Remove right margin for mobile */
+    margin-top: 10px; /* Add space above currency and login */
+  }
 }

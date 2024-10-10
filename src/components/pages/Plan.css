@@ -1,29 +1,34 @@
-/* WhyPlanWithUs.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap'); /* Google Font Import */
 
 .container-plan {
-    padding-left: 120px;
-    height: 400px;
+  padding-left: 0; /* Removed extra padding */
   margin: 0 auto;
-  text-align: left;        /* Align text to the left */
-  font-family: 'Nunito', sans-serif; /* Added font family */
+  text-align: left; /* Align text to the left */
+  font-family: 'Nunito', sans-serif; /* Font family */
+  max-width: 1200px; /* Restrict container width */
+  padding: 0 20px; /* Add padding for small screens */
+  margin-bottom: 50px;
 }
 
-h2 {
-  text-align: left;      /* Center-align heading */
+.plan-heading {
+  font-size: 30px;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px; /* Spacing below */
+  font-weight: bold;
 }
 
 .features-grid {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
 .features-column {
   display: flex;
   flex-direction: column;
   width: 45%;
+  margin-bottom: 20px;
 }
 
 .feature-item {
@@ -39,28 +44,63 @@ h2 {
 }
 
 .feature-text {
-  text-align: left;        /* Ensure text is aligned left */
+  text-align: left; /* Ensure text is aligned left */
 }
 
 .feature-item h3 {
   font-size: 1.2em;
   margin-bottom: 5px;
-  font-weight: 600;        /* Bold headings */
+  font-weight: 600; /* Bold headings */
 }
 
 .feature-item p {
   font-size: 0.9em;
   color: #555;
-  font-weight: 400;  
-  text-align: left;      /* Regular weight for paragraphs */
+  font-weight: 400;
+  text-align: left; /* Regular weight for paragraphs */
 }
 
-
-.plan-heading {
-    font-size: 30px;
-    text-align: left; /* Align text to the left */
-    width: 100%;      /* Ensure it takes up the full row width */
-    margin-bottom: 20px; /* Add some spacing below */
-    font-weight: bold;
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .features-grid {
+    flex-direction: column;
   }
-  
+
+  .features-column {
+    width: 100%; /* Make columns stack on top of each other */
+  }
+
+  .plan-heading {
+    font-size: 24px;
+    text-align: center; /* Center heading on smaller screens */
+  }
+
+  .feature-item h3 {
+    font-size: 1.1em;
+  }
+
+  .feature-item p {
+    font-size: 0.85em;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .plan-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .feature-item h3 {
+    font-size: 1em;
+  }
+
+  .feature-item p {
+    font-size: 0.8em;
+  }
+
+  .feature-item img {
+    width: 35px;
+    height: 35px;
+  }
+}

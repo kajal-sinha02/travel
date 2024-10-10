@@ -1,134 +1,136 @@
-
 .how-it-works {
-    padding-left: 105px;
-    padding-top: 30px;
-    padding-right: 110px;
+  padding: 30px  /* Default padding for large screens */
 }
-  
-.heading-work {
-    text-align: left;
-    margin-left: 20px;
-    font-size: 27px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-}
-  
-.steps-container {
-    display: flex;
-    justify-content: space-around;
 
-    height: 300px;
+.heading-work {
+  text-align: left;
+  /* margin-left: 20px; */
+  font-size: 27px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.steps-container {
+  display: grid; /* Changed to grid for better responsiveness */
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  gap: 20px; /* Space between items */
 }
 
 .step {
-    position: relative;             /* Make the parent relative to position child elements */
-    width: 550px;
-    height: 340px;                 /* Set a fixed height for the step box */
-    overflow: hidden;              /* Ensure image does not overflow */
-    border-radius: 10px;           /* Optional: Add rounded corners */
-    display: flex;                 /* Use flexbox for centering */
-    flex-direction: column;        /* Stack children vertically */
-    align-items: center;           /* Center children horizontally */
-    justify-content: center;       /* Center children vertically */
+  position: relative;
+  height: 340px; /* Fixed height for the step box */
+  overflow: hidden; /* Ensure image does not overflow */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
 }
 
 .step-image {
-    width: 90%;                    /* Set image to take 90% of its container */
-    height: auto;                  /* Maintain aspect ratio */
-    border-radius: 8px;           /* Optional: Rounding corners of the image */
-    object-fit: cover;             /* Ensure the image covers the area without stretching */
+  width: 90%; /* Set image to take 90% of its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounding corners of the image */
 }
 
-
 .icon {
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-    z-index: 0;
-    border-radius: 8px;
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  z-index: 0;
+  border-radius: 8px;
 }
 
 h3 {
-    font-size: 15px;
-    font-weight: 800;
-    margin-top: 15px;
-    text-align: center;  /* Center align the heading */
- /* WhyPlanWithUs.css */
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 15px;
+  text-align: center; /* Center align the heading */
 }
-
-.features-grid {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.features-column {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-}
-
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.feature-item img {
-  width: 40px;
-  height: 40px;
-  margin-right: 15px;
-}
-
-.feature-item h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-.feature-item p {
-  font-size: 0.9em;
-  color: #555;
-}
-
-}
-
 
 .step-description {
-  
-    font-size: 13px;  /* Reduce font size */
-    margin-top: 5px;
-    text-align: center;  /* Center align the paragraph */
-    padding: 0 10px;    /* Add some padding for better readability */
-    font-family: 'Nunito', sans-serif; /* Added font family */
+  font-size: 13px; /* Reduce font size */
+  margin-top: 5px;
+  text-align: center; /* Center align the paragraph */
+  padding: 0 10px; /* Add some padding for better readability */
+  font-family: 'Nunito', sans-serif; /* Added font family */
 }
 
-
 .cta-container {
-    display: flex;                /* Use flexbox for centering */
-    justify-content: center;      /* Center the button horizontally */
-    margin-top: 60px;            /* Add margin on top for spacing */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 60px; /* Add margin on top for spacing */
 }
 
 .cta-button {
-    padding: 10px 20px;
-    background-color: #ffeb3b;
-    color: black;
-    border: 2px solid black; /* Correctly set the border */
-    width: 280px;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 100px;
+  padding: 10px 20px;
+  background-color: #ffeb3b;
+  color: black;
+  border: 2px solid black; /* Correctly set the border */
+  width: 280px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 100px;
 }
 
 .cta-button:hover {
-   
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  .how-it-works {
+      padding: 30px 50px; /* Reduce padding for tablets */
+  }
+
+  .steps-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .heading-work {
+      font-size: 24px; /* Smaller heading for tablets */
+  }
+
+  h3 {
+      font-size: 14px; /* Adjust heading size */
+  }
+
+  .step-description {
+      font-size: 12px; /* Smaller description */
+  }
+
+  .cta-button {
+      width: 220px; /* Adjust button width */
+  }
+}
+
+@media (max-width: 600px) {
+  .how-it-works {
+      padding: 20px 30px; /* Further reduce padding for mobile */
+  }
+
+  .steps-container {
+      grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .heading-work {
+      font-size: 20px; /* Smaller heading for mobile */
+  }
+
+  h3 {
+      font-size: 13px; /* Adjust heading size */
+  }
+
+  .step-description {
+      font-size: 11px; /* Smaller description */
+      padding: 0 5px; /* Reduce padding for readability */
+  }
+
+  .cta-button {
+      width: 100%; /* Full width button */
+      padding: 12px; /* Adjust button padding */
+  }
 }

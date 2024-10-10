@@ -1,10 +1,10 @@
-/* Container for the travel cards */
+
 .travel-cards-container {
   margin-top: 40px;
   display: flex;
-  justify-content: center; /* Center the container */
-  flex-wrap: wrap; /* Allow wrapping for responsive design */
-  gap: 20px; /* Gap between cards */
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
   margin: 20px 0; /* Margin for spacing */
   padding: 0 20px; /* Padding for the container */
   position: relative; /* Make the container a positioning context */
@@ -23,6 +23,7 @@
   color: #333; /* Set the text color */
   z-index: 2; /* Ensure it stays above other content */
 }
+
 /* Individual travel card */
 .travel-card {
   position: relative;
@@ -61,7 +62,6 @@
 
 /* Card content */
 .card-content {
-  
   padding: 10px;
   position: relative; /* Position relative for button placement */
   z-index: 1; /* Ensure content is above the gradient overlay */
@@ -109,7 +109,6 @@
   bottom: 0; /* Move into view on hover */
 }
 
-
 /* Best time badge */
 .best-time {
   position: absolute;
@@ -129,29 +128,43 @@
   transform: translateY(-20px); /* Move content up on hover */
 }
 
+/* Heading styles */
 .heading {
   margin-bottom: 100px;
-  
   top: 10px; /* Align to the top */
   left: 20px; /* Align to the left */
   margin: 0; /* Remove any default margin */
-  font-size: 27px;
+  font-size: 27px; /* Adjust the font size as needed */
   font-weight: bold; /* Make the heading bold */
   color: #000000; /* Set the text color */
   padding-left: 120px;
-  
-
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
   .travel-card {
     width: 200px; /* Adjust card width for smaller screens */
+    height: 250px; /* Adjust card height for smaller screens */
+  }
+  
+  .travel-cards-container {
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .heading {
+    font-size: 24px; /* Reduce heading font size */
+    padding-left: 60px; /* Adjust padding for heading */
   }
 }
 
 @media (max-width: 480px) {
   .travel-card {
     width: 150px; /* Further adjust for very small screens */
+    height: 200px; /* Adjust card height for very small screens */
+  }
+
+  .heading {
+    font-size: 20px; /* Further reduce heading font size */
+    padding-left: 30px; /* Adjust padding for heading */
   }
 }

@@ -7,7 +7,7 @@
   margin-bottom: 100px;
 }
 
-h2 {
+h1 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 30px;
@@ -15,7 +15,7 @@ h2 {
 
 .review-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid layout */
+  grid-template-columns: repeat(2, 1fr); /* 2-column grid layout */
   grid-gap: 30px;
 }
 
@@ -71,4 +71,76 @@ h2 {
 .btn:hover {
   background-color: #000000;
   color: white;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .review-grid {
+    grid-template-columns: 1fr; /* Switch to single-column layout */
+    grid-gap: 20px; /* Reduce the gap between cards */
+  }
+
+  .review-card img {
+    width: 120px; /* Smaller image */
+    height: 120px; /* Smaller image */
+  }
+
+  .review-content h3 {
+    font-size: 18px; /* Adjust heading size */
+  }
+
+  .rating {
+    font-size: 16px; /* Adjust rating size */
+  }
+
+  .review-content p {
+    font-size: 13px; /* Adjust paragraph size */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Slightly smaller button */
+    font-size: 11px; /* Adjust button text size */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px; /* Reduce heading size */
+  }
+
+  .review-card {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-card img {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 15px; /* Add bottom margin */
+  }
+
+  .review-content h3 {
+    font-size: 16px; /* Adjust heading size */
+  }
+
+  .rating {
+    font-size: 14px; /* Adjust rating size */
+  }
+
+  .review-content p {
+    font-size: 12px; /* Adjust paragraph size */
+  }
+
+  .btn {
+    padding: 6px 14px; /* Smaller button */
+    font-size: 10px; /* Adjust button text size */
+  }
+}
+
+.plan-heading {
+  font-size: 30px;
+  text-align: left; /* Align text to the left */
+  margin-bottom: 20px; /* Spacing below */
+  font-weight: bold;
 }

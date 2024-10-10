@@ -32,7 +32,6 @@
     font-size: 16px; /* Font size for the button */
     border-radius: 5px; /* Optional: rounded corners */
     text-decoration: none;
-    /* transition: background-color 0.3s, color 0.3s; Smooth transition for hover effect */
 }
 
 /* Hover effects for the button */
@@ -111,4 +110,26 @@
     font-size: 13px;
     width: 100%; /* Adjust width as needed */
     margin: 10px auto; /* Centering the div */
+}
+
+/* Card styles for better responsiveness */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items in the card */
+    background: white; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #EFEFEF; /* Optional border between image and text */
 }

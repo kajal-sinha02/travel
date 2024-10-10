@@ -24,7 +24,7 @@ const ViewAll = () => {
       <TravelCard2 heading="Other Destinations"></TravelCard2>
       <Plan></Plan>
       <CommunityReviews></CommunityReviews>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };

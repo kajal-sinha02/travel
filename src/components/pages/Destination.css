@@ -1,6 +1,3 @@
-
-/* Destination.css */
-
 /* Carousel Container */
 .carousel-container {
   width: 100%; /* Full width of the viewport */
@@ -13,7 +10,7 @@
 
 /* Carousel Wrapper */
 .carousel-wrapper {
-  width: 75%; /* Constrain the carousel content to 75% of the screen */
+  width: 95%; /* Constrain the carousel content to 75% of the screen */
   position: relative;
   border-radius: 8px; 
   overflow: visible; /* Change from hidden to visible to allow arrows outside */

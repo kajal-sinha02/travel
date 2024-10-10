@@ -45,7 +45,7 @@ const GridTravel = ({title}) => {
 
     return (
         <div className="gridT">
-            <h1 style={{fontSize:'26px'}}>{title}</h1>
+            <div className='headingT'  >{title}</div>
             <div className="travels-grid">
                 {travels.map((travel, index) => (
                     <div className={`travels ${index === 0 ? 'featured' : ''}`} key={travel.name}>

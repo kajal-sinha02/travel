@@ -1,33 +1,34 @@
-// Destination.js
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import "./Destination.css";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css"; 
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Using React Icons
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Destination = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const slidesToShow = 7;
+  const navigate = useNavigate(); // Initialize useNavigate for navigation
 
   const carouselItems = [
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "AbuDhabi" },
     { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Dubai" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Doha" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Riyadh" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Jeddah" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Manama" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Muscat" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Kuwait City" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Doha 2" },
-    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Riyadh 2" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Singapore" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "NorthEast" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Thailand" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Kashmir" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Switzerland" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Bhutan" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "SpitiValley" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Ladakh" },
+    { imgSrc: "https://static.thenounproject.com/png/1397251-200.png", name: "Rajasthan" },
     // Add more items as needed...
   ];
 
   // Custom Previous Arrow Component
   const CustomPrevArrow = (props) => {
-    const { className, onClick } = props;
+    const { onClick } = props;
     const isDisabled = currentSlide === 0;
 
     return (
@@ -44,7 +45,7 @@ const Destination = () => {
 
   // Custom Next Arrow Component
   const CustomNextArrow = (props) => {
-    const { className, onClick } = props;
+    const { onClick } = props;
     const isDisabled = currentSlide >= carouselItems.length - slidesToShow;
 
     return (
@@ -57,6 +58,12 @@ const Destination = () => {
         <FaChevronRight />
       </button>
     );
+  };
+
+  // Function to handle click on a carousel item
+  const handleItemClick = () => {
+    // Navigate to the /planDetails route when an item is clicked
+    navigate("/planDetails");
   };
 
   const settings = {
@@ -96,7 +103,11 @@ const Destination = () => {
       <div className="carousel-wrapper">
         <Slider ref={sliderRef} {...settings}>
           {carouselItems.map((item, index) => (
-            <div className="carousel-item" key={index}>
+            <div 
+              className="carousel-item" 
+              key={index}
+              onClick={handleItemClick} // Call handleItemClick on click
+            >
               <img src={item.imgSrc} alt={item.name} />
               <p>{item.name}</p>
               {/* Uncomment if you want to display a trending badge */}

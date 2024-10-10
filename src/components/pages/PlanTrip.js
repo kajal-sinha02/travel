@@ -28,7 +28,7 @@ const ViewAll = () => {
       <GridTravel title="Plan trip as per mood"></GridTravel>
       <CardSliders images={images} name="Dubai" />
      
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };

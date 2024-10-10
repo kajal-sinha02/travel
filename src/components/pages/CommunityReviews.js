@@ -35,19 +35,18 @@ const CommunityReviews = () => {
 
   return (
     <div className="community-container">
-      <h1>Happy Community of The Tarzan Way</h1>
+      <div className='plan-heading'>Happy Community of The Tarzan Way</div>
       <div className="review-grid">
         {reviews.map((review, index) => (
           <div key={index} className="review-card">
             <img src={review.img} alt={review.name} />
             <div className="review-content">
               <p>{review.review}</p>
-              <h3>{review.name}</h3>
+              <h4 style={{textAlign : "left" , marginLeft:"0px"}}>{review.name}</h4>
               <div className="rating">
                 {'★'.repeat(review.rating)} {/* Generate stars */}
               </div>
               <p>{review.days}</p>
-              <button className="btn">See Itinerary</button>
             </div>
           </div>
         ))}

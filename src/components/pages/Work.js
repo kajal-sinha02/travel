@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 const Work = () => {
   return (
     <div className="how-it-works">
-      <div className="heading-work">How it works?</div>
+      {/* <div className="heading-work">How it works?</div> */}
       <div className="steps-container">
         <div className="step">
           <img 
