@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     z-index: 1000; /* Ensure it appears above other content */
 }
 
@@ -97,6 +98,7 @@
 
 /* Input group styling */
 .login-page__input-group {
+    width: 350px;
     display: flex;
     margin-bottom: 15px;
 }
@@ -125,6 +127,7 @@ input[type="checkbox"] {
 /* OTP button styles */
 .login-page__otp-btn {
     font-weight: bold;
+    width:"350px";
     padding: 7px;
     font-size: 13px;
     background-color: yellow;
@@ -170,4 +173,39 @@ a:hover {
 /* Optional: Hover effect for the close button */
 .login-page__close-btn:hover {
     color: red; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    /* Hide left side on smaller screens */
+    .login-page__left {
+        display: none; /* Remove the left image container */
+    }
+
+    /* Adjust right side */
+    .login-page__right {
+        width: 100%; /* Take full width */
+        padding: 20px; /* Adjust padding */
+    }
+    
+    /* Optional: adjust container height for smaller screens */
+    .login-page__container {
+        height: auto; /* Allow it to adjust based on content */
+    }
+}
+/* Add this CSS to your Login.css file */
+
+/* Shared input styling */
+.login-page__input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Make input take full width */
+}
+
+/* Update existing input and select styles to use this class as needed */
+.login-page__input-group input,
+.login-page__input-group select {
+    flex-grow: 1; /* Ensure select and input fill the available space */
 }

@@ -25,9 +25,9 @@ const Mid = ({ backgroundImage }) => {
               Bid farewell to generic holiday packages. <br></br>Get Your
               AI-Personalised Itineraries
             </p>
-            <button type="submit" className="btn-continue2">
+            {/* <button type="submit" className="btn-continue2">
               Plan Itinerary !
-            </button>
+            </button> */}
             {/* <button className="btn-plan">Plan Itinerary For Free!</button> */}
           </div>
 

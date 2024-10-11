@@ -32,7 +32,7 @@ const TravelCards = ({ heading }) => {
     <>
       <div className='headingTravel'>{heading}</div>
       <div className="travel-cards-container1">
-        
+      
         {cardsData.map((card, index) => (
           <TravelCard key={index} {...card} heading={heading} />
         ))}

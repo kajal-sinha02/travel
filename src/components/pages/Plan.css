@@ -7,7 +7,7 @@
   font-family: 'Nunito', sans-serif; /* Font family */
   max-width: 1200px; /* Restrict container width */
   padding: 0 20px; /* Add padding for small screens */
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .plan-heading {

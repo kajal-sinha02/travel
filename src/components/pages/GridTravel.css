@@ -1,8 +1,9 @@
 .gridT {
     text-align: center;
     font-family: Arial, sans-serif;
-    margin: 100px auto; /* Center horizontally with auto and adjust top and bottom */
+    margin: 0px auto; /* Center horizontally with auto and adjust top and bottom */
     padding: 0 120px; /* Initial padding for larger screens */
+    margin-bottom: 60px;
 }
 
 .travels-grid {

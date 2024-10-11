@@ -10,21 +10,27 @@ const CardSliders = ({ images, name }) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // Default number of slides to show
     slidesToScroll: 1,
     swipeToSlide: true,
     draggable: true,
+    centerMode: true, // Enable center mode
+    centerPadding: '0px', // Remove padding around centered item
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2, // Show 2 slides on medium screens
+          centerMode: true, // Enable center mode
+          centerPadding: '0px', // Remove padding
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // Show 1 slide on small screens
+          centerMode: true, // Enable center mode
+          centerPadding: '0px', // Remove padding
         },
       },
     ],

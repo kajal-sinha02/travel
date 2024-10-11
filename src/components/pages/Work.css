@@ -7,13 +7,13 @@
   /* margin-left: 20px; */
   font-size: 27px;
   font-weight: bolder;
-  margin-bottom: 10px;
+
 }
 
 .steps-container {
   display: grid; /* Changed to grid for better responsiveness */
   grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
-  gap: 20px; /* Space between items */
+  gap: 5px; /* Space between items */
 }
 
 .step {
@@ -72,7 +72,7 @@ h3 {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .cta-button:hover {

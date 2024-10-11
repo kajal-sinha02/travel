@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './Navbar.css'; // Link to external CSS for styling
 import tlogo from '../../assets/images/tlogo.avif';
-import flag from '../../assets/images/IndianFlag.png';
 import CircularLogin from './CircularLogin';
 import Login from './Login';
 
 function Navbar() {
   return (
     <div className="navbar">
-      {/* Logo */}
+      {/* Logo wrapped in Link for routing */}
       <div className="logo">
-        <img
-          src={tlogo} /* replace this with the actual path */
-          alt="Thrillophilia" 
-          style={{ height: '35px' }}
-        />
+        <Link to="/home"> {/* Link to the /home route */}
+          <img
+            src={tlogo} /* replace this with the actual path */
+            alt="Thrillophilia" 
+            style={{ height: '35px' }}
+          />
+        </Link>
       </div>
 
       {/* Search Bar */}

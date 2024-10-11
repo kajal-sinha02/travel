@@ -1,260 +1,144 @@
 .travel-planner {
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Arial, sans-serif;
-    padding: 60px; /* Add padding to the overall content */
-  
-  
+  background-image: url(''); /* Set the background dynamically from props */
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  padding: 60px; /* Add padding to the overall content */
 }
-  .overlay {
-   
-    display: flex;
-    justify-content: space-between;
-   
-    height: 100%;
-    color: white;
-  }
-  
+
+/* Overlay for content */
+.overlay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  height: 100%;
+  color: white;
+}
+
+/* Content area */
+.contentt {
+  max-width: 50%;
+}
+
+/* Responsive adjustments for content area */
+@media (max-width: 900px) {
   .contentt {
-    max-width: 50%;
+      max-width: 100%; /* Use full width on smaller screens */
   }
-  
   .contentt h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+      font-size: 2.5rem; /* Adjust heading size */
   }
-  
   .contentt p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+      font-size: 1rem; /* Adjust paragraph size */
   }
-  
-  .btn-plan {
-    background-color: #ffd700;
-    border: none;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    font-size: 1.2rem;
-    color: black;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .btn-plan:hover {
-    background-color: #f0c419;
-  }
-  
+}
+
+/* Button styles */
+.btn-plan {
+  background-color: #ffd700;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* Button hover effect */
+.btn-plan:hover {
+  background-color: #f0c419;
+}
+
+/* Form container styles */
+.form-container {
+  opacity: 0.9;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  width: 100%; /* Full width for better responsiveness */
+  height: auto; /* Adjust height automatically */
+}
+
+/* Responsive styles for form */
+@media (max-width: 600px) {
   .form-container {
-    opacity: 0.9;
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    color: black;
-    width: 20%;
-    height: 85%;
-    
+      padding: 15px; /* Reduce padding */
   }
-  
-  .form-container h3 {
-    
-    font-size: 1.23rem;
-    font-weight: bold;
-  }
-  
-  /* New styles for labels */
-  label {
-    margin-top: 20px;
-    display: block;
-    font-weight: bolder;
-    font-size: 0.85rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-  }
-  
-  .travel-form input {
-    width: 90%;
-
-    margin-bottom: 5px;
-    padding: 0.8rem;
-    height: 6px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-  }
-  
-  /* Added focus state for input fields */
-  .travel-form input:focus {
-    border-color: #ffd700;
-    outline: none;
-    /* box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); */
-  }
-  
-  .travel-form .date-inputs {
-    margin-right: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .date-inputs input {
-
-    width: 35%;
-  }
-  
-  .btn-continue {
-    background-color: #F7E700;
-    border: 2px solid black; /* Correctly define the border */
-    padding: 0; /* Remove padding to manage space with flexbox */
-    width: 100%;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    height: 35px; /* Set a height for consistent size */
-    transition: background 0.3s, border-color 0.3s; /* Add transition for border color */
 }
 
-.btn-continue:hover {
-    background-color: #eec830;
-    border-color: #f0c419; /* Change border color on hover for a visual effect */
+/* Input fields */
+.travel-form input {
+  width: 100%; /* Full width for better responsiveness */
+  margin-bottom: 10px; /* Increase spacing */
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-.btn-continue2 {
-    background-color: #ffffff;
-    border: 2px solid black; /* Correctly define the border */
-    padding: 0; /* Remove padding to manage space with flexbox */
-    width: 30%;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    height: 35px; /* Set a height for consistent size */
-    transition: background 0.3s, border-color 0.3s; /* Add transition for border color */
-    opacity: 0.85;
+/* Focus state for input fields */
+.travel-form input:focus {
+  border-color: #ffd700;
+  outline: none;
 }
 
-.btn-continue2:hover {
-    background-color: #000000;
-    color: white;
-}
-
-  
-  /* Footer with icons and descriptions */
-  .features {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  
-  .features div {
-    display: flex;
-    align-items: center;
-  }
-  
-  .features span {
-    margin-right: 10px;
-  }
-  
-  .travel-form input::placeholder {
-    color: #999;
-    font-size: 0.9rem;
-  
-  }
-  
-  /* Added focus state for input fields */
-  .travel-form input:focus {
-    border-color: #ffd700;
-    outline: none;
-  }
-  
-  /* Date inputs styling */
-  .date-inputs input {
-    width: 35%;
-  }
-  
-  /* Placeholder styling for date inputs */
-  .date-inputs input::placeholder {
-    color: #999;
-    font-size: 0.9rem;
-    
-  }
-
-  /* Checkbox and label container styling */
-.checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
-  /* Styling the checkbox */
-  .checkbox-container input[type="checkbox"] {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: 0.5rem;
-    cursor: pointer;
-  }
-  
-  /* Styling the label next to the checkbox */
-  .checkbox-container label {
-    font-size: 0.9rem;
-   margin-bottom: 20px;
-    color: #000000;
-  }
-  
-  /* Styling the label text on hover */
-
-  
-  /* Checkbox and label focus state */
- 
 /* Checkbox and label container styling */
 .checkbox-container {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-  }
-  
-  /* Styling the checkbox */
-  .checkbox-container input[type="checkbox"] {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: 0.5rem;
-    cursor: pointer;
-  }
-  
-  /* Styling the label next to the checkbox */
-  .checkbox-container label {
-    text-align: center;
-    font-size: 0.65rem;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  /* Styling the label text on hover */
- 
-  
-  /* Checkbox and label focus state */
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
 
-  .montserrat-travel h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: bold;
-    color: black;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;    
-  }
+/* Checkbox styling */
+.checkbox-container input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+/* Label styling */
+.checkbox-container label {
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/* Features footer */
+.features {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.features div {
+  display: flex;
+  align-items: center;
+}
+
+/* Placeholder styling */
+.travel-form input::placeholder {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments for buttons */
+.btn-continue,
+.btn-continue2 {
+  width: 100%; /* Full width for buttons */
+  padding: 0.5rem; /* Adjust padding */
+}
+
+.btn-continue:hover,
+.btn-continue2:hover {
+  background-color: #eec830; /* Consistent hover color */
+  border-color: #f0c419; /* Change border color on hover */
+}
