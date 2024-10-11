@@ -45,9 +45,9 @@ const Work = () => {
 
         
       </div>
-      <Link to="/planTrip" style={{textDecorationLine:"none"}}><div className="cta-container">  {/* Added wrapper div for button */}
+      {/* <Link to="/planTrip" style={{textDecorationLine:"none"}}><div className="cta-container">  
         <button className="cta-button">Plan Itinerary</button>
-      </div></Link>
+      </div></Link> */}
 
       
     </div>

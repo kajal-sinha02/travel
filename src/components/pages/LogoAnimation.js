@@ -5,7 +5,7 @@ const LogoAnimation = () => {
   return (
     <div className="logo-marquee">
       <div className="head">
-        <p>Tourism Board Alliance</p>
+        <p style={{marginBottom:"20px"}}>What they Say?</p>
 
       </div>
       {/* <h2>Tourism Board Alliances</h2> */}

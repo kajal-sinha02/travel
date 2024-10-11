@@ -22,7 +22,7 @@ const ViewAll = () => {
 
       <CardSliders images={images} name="Family Tours" />
       <GridTravel title="Dubai Delights | Crossroad Cultures of the Middle East"></GridTravel>
-      <TravelCards heading="Top countries to visit in Asia"></TravelCards>
+      <TravelCard2 heading="Top countries to visit in Asia"></TravelCard2>
       <CardSliders images={images} name="Popular Destinations" />
 
       <GridTravel title="Plan trip as per mood"></GridTravel>

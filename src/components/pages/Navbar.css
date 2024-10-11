@@ -1,3 +1,17 @@
+/* Navbar.css */
+
+/* Reset some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,13 +20,16 @@
   margin-top: 15px;
   background-color: white;
   margin-bottom: 5px;
+  position: relative; /* For positioning if needed */
 }
 
+/* Logo */
 .logo img {
   height: 50px; /* Adjust size as necessary */
   margin-left: 20px; /* Adjust margin for logo */
 }
 
+/* Search Bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -50,6 +67,7 @@
   color: transparent; /* Make placeholder invisible on focus (if desired) */
 }
 
+/* Currency and Login Section */
 .currency-login {
   display: flex;
   align-items: center;
@@ -95,9 +113,10 @@
 
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column; /* Stack items vertically for mobile */
-    align-items: flex-start; /* Align items to start */
-    padding: 10px; /* Further reduce padding for mobile */
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 30px 30px; /* Adjust padding for mobile */
   }
 
   .logo img {
@@ -106,12 +125,11 @@
   }
 
   .search-bar {
-    width: 100%; /* Full width search bar for mobile */
-    margin-top: 10px; /* Space above search bar */
+    display: none; /* Hide the search bar */
   }
 
   .currency-login {
     margin-right: 0; /* Remove right margin for mobile */
-    margin-top: 10px; /* Add space above currency and login */
+    /* Optional: Align to the right if not already */
   }
 }

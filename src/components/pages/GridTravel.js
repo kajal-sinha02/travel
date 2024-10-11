@@ -1,5 +1,6 @@
 import React from 'react';
 import "./GridTravel.css"
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const GridTravel = ({title}) => {
     const travels = [
@@ -49,7 +50,8 @@ const GridTravel = ({title}) => {
             <div className="travels-grid">
                 {travels.map((travel, index) => (
                     <div className={`travels ${index === 0 ? 'featured' : ''}`} key={travel.name}>
-                        <img src={travel.image} alt={travel.name} />
+                      <Link to="/view"> <img src={travel.image} alt={travel.name} /></Link>
+                       
                         <div className="montserrat-travel">
                             <h2>{travel.name}</h2>
                             <p>{travel.tagline}</p>

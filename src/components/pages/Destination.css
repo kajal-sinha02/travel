@@ -10,7 +10,7 @@
 
 /* Carousel Wrapper */
 .carousel-wrapper {
-  width: 95%; /* Constrain the carousel content to 75% of the screen */
+  width: 82%; /* Constrain the carousel content to 75% of the screen */
   position: relative;
   border-radius: 8px; 
   overflow: visible; /* Change from hidden to visible to allow arrows outside */

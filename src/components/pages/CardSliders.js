@@ -53,7 +53,7 @@ const CardSliders = ({ images, name }) => {
           ))}
         </Slider>
       </div>
-      <div className="horizontal-line"></div>
+      {/* <div className="horizontal-line"></div> */}
     </div>
   );
 };

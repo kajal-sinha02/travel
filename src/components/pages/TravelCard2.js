@@ -7,7 +7,7 @@ const TravelCard = ({ imgSrc, country, price, bestTime, heading }) => {
     <>
       <div className="travel-card2" style={{ backgroundImage: `url(${imgSrc})` }}>
         <div className="card-content">
-          <h3>{country}</h3>
+          <h3 >{country}</h3>
           <p>From ₹{price} - per day</p>
         </div>
         <Link to="/planDetails">

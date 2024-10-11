@@ -1,7 +1,8 @@
 import React from 'react';
 import './Card.css'; // You will create this CSS file for styling.
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
-const Card = ({image}) => {
+const Card = ({ image }) => {
   return (
     <div className="card">
       <div className="card-banner">
@@ -10,7 +11,7 @@ const Card = ({image}) => {
         </div> */}
       </div>
       <img
-        src="https://media1.thrillophilia.com/filestore/4cgc0ibn1rqwvli84izupxwe45nv_shutterstock_2384596901%20(1).jpg?w=360&dpr=2" // Replace with the actual path to your image
+        src="https://media1.thrillophilia.com/filestore/4cgc0ibn1rqwvli84izupxwe45nv_shutterstock_2384596901%20(1).jpg?w=360&dpr=2"
         alt="Dubai Highlights"
         className="card-image"
       />
@@ -18,16 +19,16 @@ const Card = ({image}) => {
         <div className="trip-info">
           <h5>{image.duration}</h5>
           <div className="rating">
-          
-          <span className="star-icon">⭐</span> {/* Green inline star */}
-
+            <span className="star-icon">⭐</span> {/* Green inline star */}
             <span>{image.rating}</span>
             <span>(1.6k)</span>
           </div>
         </div>
-        <div classname="cardslider-heading">{image.title}</div>
+        <div className="cardslider-heading">{image.title}</div>
         
-        <div className="gradient-div"><p style={{fontSize:"15px"}}>5 D Dubai</p></div>
+        <div className="gradient-div">
+          <p style={{ fontSize: "15px" }}>5 D Dubai</p>
+        </div>
         <div className="pricing">
           <div className="price-info">
             <span className="price-current">INR 45,000</span>
@@ -36,11 +37,14 @@ const Card = ({image}) => {
           </div>
         </div>
         <div className="button-container">
-    <button className="avail-btn2"><i className="fa fa-phone" aria-hidden="true"></i>
-    </button>
-    <button className="avail-btn">Avail This Offer</button>
-</div>
-
+          <button className="avail-btn2">
+            <i className="fa fa-phone" aria-hidden="true"></i>
+          </button>
+          {/* Use Link without changing the button styling */}
+          <Link to="/view">
+            <button className="avail-btn" style={{width :"230px"}}>Avail This Offer</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,35 +1,64 @@
+
+
+/* Carousel Container */
 .road-trip-overview {
   display: flex;
-  flex-direction: column; /* Change to column for smaller screens */
-  padding: 20px; /* Adjust padding for mobile */
+  flex-direction: column; /* Stack vertically on small screens */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically if parent has height */
+  padding: 20px;
   background-color: #ffffff;
+  max-width: 1200px; /* Prevents the container from stretching too much on large screens */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
+/* Text Section */
 .text-section {
-  width: 100%; /* Full width for smaller screens */
-  max-width: 600px; /* Limit max width for larger screens */
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px; /* Space between text and map on small screens */
 }
 
 .text-section h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: center; /* Center the heading */
+  color: #333;
 }
 
 .text-section p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #555;
+  text-align: justify; /* Justify text for better readability */
 }
 
 .read-more-toggle {
   color: #007bff;
   cursor: pointer;
   font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
+.read-more-toggle:hover,
+.read-more-toggle:focus {
+  color: #0056b3;
+  outline: none;
+}
+
+/* Map Section */
 .map-section {
-  width: 100%; /* Full width for smaller screens */
+  width: 100%;
   height: 400px;
+  max-width: 800px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .leaflet-container {
@@ -38,32 +67,69 @@
 }
 
 /* Responsive Styles */
-@media (min-width: 600px) {
+
+/* Medium Screens (Tablets) */
+@media (min-width: 600px) and (max-width: 1024px) {
   .road-trip-overview {
-    flex-direction: row; /* Row layout for larger screens */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 40px; /* Increase padding for larger screens */
+    padding: 40px;
   }
 
   .text-section {
-    width: 55%; /* Set width for larger screens */
+    width: 48%; /* Approximately half the container */
+    margin-bottom: 0; /* Remove bottom margin when side by side */
   }
 
   .map-section {
-    width: 40%; /* Set width for larger screens */
+    width: 48%;
+    height: 350px;
   }
 }
 
-@media (max-width: 600px) {
-  .text-section h1 {
-    font-size: 1.5rem; /* Smaller heading for mobile */
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  .road-trip-overview {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
   }
 
-  .text-section p {
-    font-size: 0.9rem; /* Smaller text for mobile */
+  .text-section {
+    width: 55%;
+    margin-bottom: 0;
   }
 
   .map-section {
-    height: 300px; /* Smaller map for mobile */
+    width: 40%;
+    height: 400px;
+  }
+
+  .text-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 599px) {
+  .road-trip-overview {
+    padding: 20px;
+  }
+
+  .text-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .text-section p {
+    font-size: 0.95rem;
+  }
+
+  .map-section {
+    height: 300px;
   }
 }
