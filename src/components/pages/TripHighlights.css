@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+  
+  /* Heading styles for the main title */
+  .container p:first-of-type {
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  /* Heading styles for the subheading */
+  .container p:nth-of-type(2) {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    margin-top: -10px;
+    text-align: left;
+  }
+  
+  .headingContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .heading {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .contentContainer {
+    text-align: left;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item {
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 17px;
+    color: grey;
+    padding-left: 20px; /* Space for the bullet */
+  }
+  
+  .item::before {
+    content: '●'; /* Circular dot symbol */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    font-size: 12px;
+  }
+  
+  /* Responsive styling for tablets */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    /* Adjusting font size for smaller devices */
+    .container p:first-of-type {
+      font-size: 28px;
+      margin-top: 80px;
+    }
+  
+    .container p:nth-of-type(2) {
+      font-size: 22px;
+    }
+  
+    .item {
+      font-size: 15px;
+      padding-left: 15px;
+    }
+  }
+  
+  /* Responsive styling for mobile devices */
+  @media (max-width: 480px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .container p:first-of-type {
+      font-size: 22px;
+      margin-top: 60px;
+    }
+  
+    .container p:nth-of-type(2) {
+      font-size: 18px;
+    }
+  
+    .item {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+  

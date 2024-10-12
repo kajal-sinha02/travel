@@ -5,7 +5,7 @@ import { faUtensils, faPlane, faHotel, faCar } from '@fortawesome/free-solid-svg
 
 const itineraryData = [
   {
-    day: "Day 1 - Arrival in Leh, Ladakh",
+    day: "Arrival in Leh, Ladakh",
     explore: ["Leh Royal Palace", "Shanti Stupa", "Riasi Fort or Zorawar Fort"],
     fullDetails: {
       flights: "Catch an early morning flight at 4:05 am to Leh. You’ll reach Leh by 6:20 am.",
@@ -19,15 +19,15 @@ const itineraryData = [
     },
   },
   {
-    day: "Day 2 - Leh, Ladakh Exploration",
+    day: "Leh, Ladakh Exploration",
     explore: ["Shey Monastery", "Druk Padma Karpo School", "Thiksey Monastery"],
   },
   {
-    day: "Day 3 - Arrival in Nubra",
+    day: "Arrival in Nubra",
     explore: ["Enroute: Khardung La", "Diskit Gompa", "Maitreya Buddha"],
   },
   {
-    day: "Day 4 - Nubra Exploration",
+    day: "Nubra Exploration",
     explore: ["Hunder Sand Dunes", "Bactrian Camel Safari", "Samstanling Monastery"],
   },
 ];
@@ -46,17 +46,17 @@ const Itinerary = () => {
 
   return (
     <div className="itinerary-container">
-      <div className="sidebar">
+      {/* <div className="sidebar">
         {itineraryData.map((item, index) => (
           <button
             key={index}
             className={`day-button ${activeDayIndex === index ? "active" : ""}`}
-            onClick={() => handleDayButtonClick(index)} // Handle button click
+            onClick={() => handleDayButtonClick(index)} 
           >
             Day {index + 1}
           </button>
         ))}
-      </div>
+      </div> */}
 
       <div className="itinerary-content">
         {itineraryData.map((item, index) => {

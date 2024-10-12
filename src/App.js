@@ -34,7 +34,7 @@ function App() {
           <Route path="/planDetails" element={<PlanDetails />} />
         </Routes>
 
-      
+    
       </div>
     </Router>
   );

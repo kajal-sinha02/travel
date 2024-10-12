@@ -3,7 +3,7 @@ import Mid from "./Mid";
 import Navbar from "./Navbar";
 import { images } from "../../array/imageData";
 import CardSliders from "./CardSliders";
-import GridTravel from "./GridTravel";
+import GridTravel2 from "./GridTravel2";
 import TravelCards from "./TravelCards";
 import TravelCard2 from "./TravelCard2";
 import Description from "./Description";
@@ -15,14 +15,19 @@ import Itinerary from "./Itinerary";
 import RateCard from "./RateCard";
 import "./PlanDetails.css"
 import Stay from "./Stay";
+import TripHighlights from "./TripHighlights";
+import Heading from "./Heading";
 const ViewAll = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Mid backgroundImage="https://d31aoa0ehgvjdi.cloudfront.net//eyJidWNrZXQiOiJ0aGV0YXJ6YW53YXktd2ViIiwia2V5IjoibWVkaWEvcGFnZS8xNjc5MDUwODgzNDM5OTM2MTYxMDQxMjU5NzY1NjIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIn19fQ== "></Mid>
-      <Description></Description>
+     
+      {/* <Description></Description> */}
 
       {/* New Flexbox container for RateCard and Itinerary */}
+    <GridTravel2></GridTravel2>
+    <TripHighlights></TripHighlights>
+    
       <div className="rate-itinerary-container">
         <Itinerary></Itinerary>
         <RateCard></RateCard>

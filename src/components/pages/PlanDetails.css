@@ -11,14 +11,14 @@
 
 /* Itinerary styles */
 .itinerary-container {
-    flex: 0 0 60%; /* 60% width for itinerary */
+    flex: 0 0 50%; /* 60% width for itinerary */
    width: 700px; /* Maximum width */
     margin-right: 10px; /* Space between itinerary and rate card */
 }
 
 /* RateCard styles */
 .rate-card {
-    flex: 0 0 40%; /* 40% width for rate card */
+    flex: 0 0 30%; /* 40% width for rate card */
     max-width: 400px; /* Ensure it does not exceed this width */
     margin: 100px; /* Remove margin */
     background-color: #fff;
