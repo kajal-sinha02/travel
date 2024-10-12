@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column; /* Stack vertically on small screens */
   align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically if parent has height */
+  /* justify-content: center; Center vertically if parent has height */
   padding: 20px;
   background-color: #ffffff;
   max-width: 1200px; /* Prevents the container from stretching too much on large screens */

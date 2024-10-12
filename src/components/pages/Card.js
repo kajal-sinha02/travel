@@ -19,7 +19,7 @@ const Card = ({ image }) => {
         <div className="trip-info">
           <h5>{image.duration}</h5>
           <div className="rating">
-            <span className="star-icon">⭐</span> {/* Green inline star */}
+            <span className="star-icon">⭐</span>
             <span>{image.rating}</span>
             <span>(1.6k)</span>
           </div>
@@ -37,13 +37,14 @@ const Card = ({ image }) => {
           </div>
         </div>
         <div className="button-container">
-          <button className="avail-btn2">
-            <i className="fa fa-phone" aria-hidden="true"></i>
-          </button>
-          {/* Use Link without changing the button styling */}
-          <Link to="/view">
-            <button className="avail-btn" style={{width :"230px"}}>Avail This Offer</button>
-          </Link>
+          <div className="call-button-container">
+            <button className="avail-btn2">
+              <i className="fa fa-phone" aria-hidden="true"></i>
+            </button>
+            <Link to="/view">
+              <button className="avail-btn">Avail This Offer</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

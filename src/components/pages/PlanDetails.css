@@ -1,0 +1,57 @@
+/* ViewAll.css */
+
+/* Container for RateCard and Itinerary */
+.rate-itinerary-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items at the start */
+   
+    width: 100%; /* Full width of the parent */
+}
+
+/* Itinerary styles */
+.itinerary-container {
+    flex: 0 0 60%; /* 60% width for itinerary */
+   width: 700px; /* Maximum width */
+    margin-right: 10px; /* Space between itinerary and rate card */
+}
+
+/* RateCard styles */
+.rate-card {
+    flex: 0 0 40%; /* 40% width for rate card */
+    max-width: 400px; /* Ensure it does not exceed this width */
+    margin: 100px; /* Remove margin */
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgb(233, 233, 233);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Media query for stacking on smaller screens */
+@media (max-width: 1500px) {
+    .rate-itinerary-container {
+        flex-direction: column; /* Stack vertically on small screens */
+    }
+
+    .itinerary-container {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add space below the itinerary */
+    }
+
+   /* RateCard styles */
+.rate-card {
+    width: 70%; /* Set width to 50% on small screens */
+  
+    margin: 0 auto; /* Center the card horizontally */
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid rgb(233, 233, 233);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    justify-content: center; /* Center content horizontally */
+    
+}
+
+}

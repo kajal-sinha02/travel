@@ -1,0 +1,196 @@
+/* Import the Nunito font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+.stay-card-container {
+  padding-left: 150px; /* Add left padding */
+  margin-top: 20px;
+}
+
+.stay-title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  text-align: left;
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+}
+
+.stay-cards {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 20px; /* Space between cards */
+}
+
+.stay-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 1000px; /* Set fixed width for each card */
+  height: 200px; /* Increase height of the card */
+  background-color: #fff;
+  font-size: 0.8em; /* Smaller font size */
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+  position: relative; /* Position for button placement */
+}
+
+.stay-card:hover {
+  box-shadow: 0 0 15px yellow; /* Yellow glow effect on hover */
+  /* transform: translateY(-2px); Slight lift effect on hover */
+}
+
+.stay-body {
+  display: flex; /* Use flexbox to arrange image and content */
+  flex-direction: row; /* Align items in a row */
+}
+
+.stay-image {
+  position: relative;
+  margin-right: 10px; /* Space between image and text */
+}
+
+.stay-image img {
+  width: 80px; /* Fixed width for the image */
+  height: 80px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 5px;
+}
+
+.hotel-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #002e47;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 0.75em; /* Smaller font size */
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+}
+
+.stay-details {
+  flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.stay-details h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+}
+
+.stay-details p {
+  margin: 3px 0;
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+}
+
+.view-detail {
+  padding: 8px 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  font-weight: bold;
+  width: 15%; /* Full width button */
+  font-size: 1em; /* Smaller font size */
+  font-family: 'Nunito', sans-serif; /* Apply font family */
+  position: absolute; /* Fix position */
+  bottom: 20px; /* Margin from the bottom */
+  right: 20px; /* Margin from the right */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .stay-card {
+    max-width: 100%; /* Allow the card to take up full width on smaller screens */
+  }
+
+  
+.stay-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif; /* Apply font family */
+    padding-left: 20px;
+  }
+
+  .stay-body {
+    flex-direction: column; /* Stack the image and details vertically on small screens */
+    align-items: center;
+  }
+
+  .stay-image img {
+    width: 100%; /* Full width image on small screens */
+    height: auto;
+  }
+
+  .view-detail {
+    width: 100%; /* Full width button on small screens */
+  }
+
+  .stay-card-container {
+    flex-direction: column; /* Stack cards vertically on very small screens */
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+    .stay-card {
+      width: 90%; /* Adjust width for medium screens */
+      height: auto; /* Allow height to adjust based on content */
+      padding: 10px; /* Adjust padding */
+    }
+  
+    .stay-body {
+      flex-direction: column; /* Stack the image and details vertically on medium screens */
+      align-items: center;
+    }
+  
+    .stay-image img {
+      width: 60px; /* Slightly smaller image on medium screens */
+      height: 60px; /* Adjust height */
+    }
+  
+    .view-detail {
+      width: 100%; /* Full width button on medium screens */
+      position: relative; /* Adjust position for button */
+      margin-top: 10px; /* Add margin on top for spacing */
+      bottom: initial; /* Reset bottom positioning */
+      right: initial; /* Reset right positioning */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stay-card {
+      padding-left: 0; /* Remove left padding */
+      max-width: 100%; /* Allow the card to take up full width on smaller screens */
+      height: auto; /* Allow height to adjust based on content */
+      padding: 10px; /* Adjust padding */
+      margin: 0 auto; /* Center the card */
+    }
+  
+    .stay-body {
+      flex-direction: column; /* Stack the image and details vertically on small screens */
+      align-items: center;
+    }
+  
+    .stay-image img {
+      width: 100%; /* Full width image on small screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .view-detail {
+      width: 100%; /* Full width button on small screens */
+      position: relative; /* Adjust position for button */
+      margin-top: 10px; /* Add margin on top for spacing */
+      bottom: initial; /* Reset bottom positioning */
+      right: initial; /* Reset right positioning */
+    }
+  
+    .stay-card-container {
+      flex-direction: column; /* Stack cards vertically on very small screens */
+      align-items: center;
+      padding-left: 0; /* Remove left padding on smaller screens */
+    }
+  }
+  

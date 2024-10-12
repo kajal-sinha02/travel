@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+.route-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  font-family: 'Nunito', sans-serif; /* Ensure Nunito is applied here */
+  
+}
+
+.route-stop {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.route-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.route-dot {
+  width: 20px; /* Increased size for better visibility */
+  height: 20px; /* Increased size for better visibility */
+  border-radius: 50%;
+  border: 2px solid transparent; /* Transparent border to create space for the colored circle */
+  background-color: white; /* White circle */
+  position: relative; /* For positioning the arrow */
+}
+
+.black {
+  border-color: black; /* Color outside the dot */
+}
+
+.blue {
+  border-color: #00aaff; /* Color outside the dot */
+}
+
+.yellow {
+  border-color: #ffdd00; /* Color outside the dot */
+}
+
+.red {
+  border-color: #ff4d4d; /* Color outside the dot */
+}
+
+.green {
+  border-color: #4caf50; /* Color outside the dot */
+}
+
+.route-line {
+  width: 2px;
+  height: 30px; /* Reduced height for more spacing */
+  border-left: 2px dotted;
+  margin-top: 10px; /* Added more spacing on top */
+  margin-bottom: 10px; /* Added more spacing on bottom */
+}
+
+.route-details {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif; /* Ensure Nunito is applied here */
+  position: relative; /* Positioning for the arrow */
+}
+
+.route-location {
+  font-weight: 700;
+  padding-bottom: 5px; /* Adjust this value to move the text higher */
+  line-height: 1.2; /* Adjust line-height for better spacing */
+  padding-right: 20px; /* Space for the arrow */
+}
+
+.route-nights {
+  margin-left: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* Arrow style */
+.route-details::after {
+  content: '>'; /* Change to right-facing angle bracket */
+  position: absolute;
+  right: -20px; /* Adjust position to the right */
+  top: 0; /* Align with text */
+  font-size: 18px; /* Arrow size */
+  color: gray; /* Color for the arrow */
+}

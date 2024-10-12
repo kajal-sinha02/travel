@@ -2,12 +2,13 @@
   background-image: url(''); /* Set the background dynamically from props */
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: Arial, sans-serif;
   padding: 60px; /* Add padding to the overall content */
+  background-color: #000000;
 }
 
 /* Overlay for content */

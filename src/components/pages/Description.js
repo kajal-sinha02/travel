@@ -4,6 +4,8 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./Description.css";
 import L from "leaflet";
+import { Route } from "react-router-dom";
+import RouteLine from "./RouteLine";
 
 // Fixing default marker icon issue in Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -23,9 +25,9 @@ function App() {
   return (
     <div className="road-trip-overview">
       <div className="text-section">
-        <h1 style={{fontSize :"25px"}}>A little about Greece</h1>
+        <h4 style={{fontSize :"30px" , textAlign:"left" , marginLeft:"20px" , color:"black"}}>Route</h4>
         <p>
-          India is known for its diverse landscape, which encompasses a wide range
+          {/* India is known for its diverse landscape, which encompasses a wide range
           of geographical features and natural resources. From the towering peaks
           of the Himalayas in the north to the pristine beaches of the south,
           India’s geography is shaped by its location, climate, and history,
@@ -35,8 +37,8 @@ function App() {
           and glaciers. The region is home to several of India’s major rivers,
           such as the Ganges, Brahmaputra, and Indus, which provide water to
           millions of people and support a rich biodiversity of wildlife. Moving
-          towards the west, the Thar desert covers much of Rajasthan.
-          {readMore && (
+          towards the west, the Thar desert covers much of Rajasthan. */}
+          {/* {readMore && (
             <>
               {" "}
               Other regions include the Eastern Ghats, the Western Ghats, the
@@ -45,14 +47,15 @@ function App() {
               of civilizations, and its contrasting natural beauty, making India
               a perfect place for those who wish to explore through road trips.
             </>
-          )}
-          <button
+          )} */}
+          <RouteLine></RouteLine>
+          {/* <button
             className="read-more-toggle"
             onClick={() => setReadMore(!readMore)}
             aria-expanded={readMore}
           >
             {extraText}
-          </button>
+          </button> */}
         </p>
       </div>
 

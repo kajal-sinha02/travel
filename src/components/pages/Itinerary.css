@@ -1,0 +1,150 @@
+/* Container for the entire itinerary and sidebar */
+.itinerary-container {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 800px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex-basis: 100px;
+    padding: 10px 0;
+    background-color: #ffffff;
+   
+    margin-right: 20px;
+}
+
+/* Button styles in the sidebar */
+.day-button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: white; /* Default button background */
+    color: black; /* Text color */
+    border: 1px rgb(169, 169, 169) solid; /* No border */
+    text-align: left; /* Align button text to the left */
+    font-size: 14px;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    cursor: pointer;
+    /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+/* Active button with black background and yellow underline */
+.day-button.active {
+    background-color: black;
+    color: white;
+    border-bottom: 3px solid yellow; /* Yellow underline */
+}
+
+/* Hover effect for buttons */
+.day-button:hover {
+    background-color: #c7c7c7; /* Light grey on hover */
+}
+
+/* Content area */
+.itinerary-content {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/* Card styling */
+.itinerary-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust card width */
+    /* transition: transform 0.2s ease; */
+}
+
+/*  */
+
+/* Header with View More/Less link */
+.itinerary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Title aligned to the left */
+.itinerary-title {
+    font-size: 14px;
+    color: #333;
+    margin: 0; /* Remove bottom margin */
+    text-align: left; /* Left-align the title */
+}
+
+/* Toggle View Link */
+/* Toggle View Link styles */
+.toggle-view-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Hover effect for Toggle View Link */
+.toggle-view-link:hover {
+    background-color: black; /* Background color on hover */
+    color: white; /* Change text color on hover for better visibility */
+    text-decoration: none; /* Ensure no underline on hover */
+    font-size: 14px; /* Optional: adjust font size on hover */
+}
+
+
+/* Details section */
+.itinerary-details p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* Explore section */
+.explore-row {
+    margin-left: 15px; /* Space from left border */
+}
+
+.explore-heading {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Explore tags */
+.explore-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.explore-tag {
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Add activity link */
+.add-activity-link {
+    margin-top: 10px;
+    color: blue;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* Add this CSS to your styles, possibly in a CSS file that applies to ViewAll */
+
+
