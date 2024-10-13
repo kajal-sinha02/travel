@@ -37,7 +37,7 @@ const CardSliders = ({ images, name }) => {
   };
 
   return (
-    <div className="slider-wrapper">
+    <div className="slider-wrapper" >
       {/* Header Section */}
       <div className="header">
         <h1 className="header-title">{name}</h1>

@@ -63,7 +63,7 @@ const Destination = () => {
   // Function to handle click on a carousel item
   const handleItemClick = () => {
     // Navigate to the /planDetails route when an item is clicked
-    navigate("/planDetails");
+    navigate("/viewPackages");
   };
 
   const settings = {

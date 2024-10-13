@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';  // Login-specific CSS
 import CircularLogin from './CircularLogin';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Login = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage login modal visibility
@@ -9,6 +10,7 @@ const Login = () => {
   const [email, setEmail] = useState(''); // State for email
   const [otpDigits, setOtpDigits] = useState(['', '', '', '']); // State for OTP digits
   const [otpSent, setOtpSent] = useState(false); // State to check if OTP is sent
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleClose = () => {
     setIsOpen(false); // Close the modal
@@ -51,6 +53,20 @@ const Login = () => {
         document.getElementById(`otp-input-${index + 1}`).focus();
       }
     }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    // Validate required fields
+    if (!fullName || !email || otpDigits.join('').length < 4) {
+      alert('Please fill in all required fields: Full Name, Email, and OTP.');
+      return; // Stop submission if validation fails
+    }
+
+    // If validation passes, navigate to /home
+    handleClose();  
+    navigate('/home');
   };
 
   return (
@@ -101,7 +117,7 @@ const Login = () => {
                     />
                   </div>
                   {otpSent ? (
-                    <div style={{width:"324px"}}>
+                    <div style={{ width: "324px" }}>
                       <input
                         type="text"
                         placeholder="Full Name"
@@ -119,7 +135,7 @@ const Login = () => {
                         className="login-page__input" // Apply CSS class for styling
                       />
                       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>Enter OTP</div> {/* Added heading */}
+                        <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>Enter OTP</div>
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                           {otpDigits.map((digit, index) => (
                             <input
@@ -139,11 +155,15 @@ const Login = () => {
                     </div>
                   ) : (
                     <div className="login-page__checkbox-group">
-                    
+                      {/* You can add additional inputs or checkbox here if needed */}
                     </div>
                   )}
-                  <button className="login-page__otp-btn" onClick={handleRequestOtp}>
-                    Request OTP
+                  <button 
+                    className="login-page__otp-btn" 
+                    onClick={otpSent ? handleSubmit : handleRequestOtp}
+                    disabled={!otpSent && !mobileNumber} // Disable if OTP has not been requested and no mobile number is entered
+                  >
+                    {otpSent ? "Log In" : "Request OTP"}
                   </button>
                   <p style={{ fontSize: "10px", marginTop: "15px", textAlign: "center" }}>
                     By signing up you are agreeing with our <a href="#">T&Cs</a> and <a href="#">privacy policy</a>.

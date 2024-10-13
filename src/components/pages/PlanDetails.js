@@ -32,7 +32,7 @@ const ViewAll = () => {
         <Itinerary></Itinerary>
         <RateCard></RateCard>
       </div>
-      <Stay></Stay>
+      {/* <Stay></Stay> */}
       <Work></Work>
       <TravelCard2 heading="Destinations"></TravelCard2>
       <Plan></Plan>

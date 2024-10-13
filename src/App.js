@@ -12,6 +12,7 @@ import Slideshow from "./components/pages/Slideshow";
 import CardSliders from "./components/pages/CardSliders";
 import Work from "./components/pages/Work"
 import ViewAll from "./components/pages/ViewAll";
+import ViewAll2 from "./components/pages/ViewAll2";
 import Home from "./components/pages/Home";
 import PlanTrip from "./components/pages/PlanTrip";
 import PlanDetails from "./components/pages/PlanDetails"
@@ -31,6 +32,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/planTrip" element={<PlanTrip />} />
           <Route path="/planDetails" element={<PlanDetails />} />
+          <Route path="/viewPackages" element={<ViewAll2 />} />
         </Routes>
         <Footer /> 
     

@@ -1,14 +1,18 @@
 import React from 'react';
-import './Card.css'; // You will create this CSS file for styling.
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import './Card.css'; // Your CSS file
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Card = ({ image }) => {
+  const navigate = useNavigate(); // Initialize navigate
+
+  const handleCardClick = () => {
+    navigate('/planDetails'); // Navigate to /planDetails
+  };
+
   return (
-    <div className="card">
+    <div className="card" onClick={handleCardClick} style={{ cursor: 'pointer' }}> {/* Add onClick and cursor style */}
       <div className="card-banner">
-        {/* <div className="banner-text">
-          THRILL FEST | Get Up To 3 International Trips Free!
-        </div> */}
+        {/* Optional banner text can be added here */}
       </div>
       <img
         src="https://media1.thrillophilia.com/filestore/4cgc0ibn1rqwvli84izupxwe45nv_shutterstock_2384596901%20(1).jpg?w=360&dpr=2"
@@ -38,12 +42,10 @@ const Card = ({ image }) => {
         </div>
         <div className="button-container">
           <div className="call-button-container">
-            <button className="avail-btn2">
+            <button className="avail-btn2" style={{marginLeft:"0px" , width:"50px"}}>
               <i className="fa fa-phone" aria-hidden="true"></i>
             </button>
-            <Link to="/view">
-              <button className="avail-btn">Avail This Offer</button>
-            </Link>
+            <button className="avail-btn" style={{width:"250px"}}>Avail This Offer</button>
           </div>
         </div>
       </div>
