@@ -126,7 +126,7 @@ const Footer = () => {
 
       <footer className="footer">
         <div style={{ height: "100px" }}></div>
-        <h2>thrillophilio.com</h2>
+        <h2>travassurance.com</h2>
         <div style={{ height: "200px" }}></div>
         <div className="social-icons">
           <i className="fab fa-facebook"></i>
@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
 
         <p style={{ fontSize: "15px", color: "grey" }}>
-          © 2024 Thrillophilia.com All rights reserved.
+          © 2024 travassurance.com All rights reserved.
         </p>
 
         <h4>
