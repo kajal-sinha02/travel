@@ -2,7 +2,6 @@
 .carousel-container {
   width: 100%; /* Full width of the viewport */
   display: flex;
-  margin-top: 60px;
   justify-content: center; /* Center the carousel content */
   border-top: 2px solid #EFEFEF; /* Grey line above */
   border-bottom: 2px solid #EFEFEF; /* Grey line below */
