@@ -20,7 +20,7 @@ const CardSliders = ({ images, name }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Show 2 slides on medium screens
+          slidesToShow: 2 , // Show 2 slides on medium screens
           centerMode: true, // Enable center mode
           centerPadding: '0px', // Remove padding
         },

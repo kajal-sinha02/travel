@@ -35,7 +35,7 @@ const Home = () => {
 
       <CommunityReviews></CommunityReviews>
 
-      {/* <Footer />  */}
+      
     </>
   );
 };

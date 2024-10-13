@@ -6,6 +6,7 @@
   font-family: 'Arial', sans-serif;
   background-color: #fff;
   gap: 10px;
+  border: 2px soild blackx;
 }
 
 /* Banner at the top */
@@ -21,6 +22,7 @@
   width: 100%;
   height: 330px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 /* Body content */

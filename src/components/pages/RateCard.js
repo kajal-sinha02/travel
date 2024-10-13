@@ -30,7 +30,7 @@ const RateCard = () => {
       <div className="button-container">
         <button className="proceed-btn">Log in to proceed</button>
         <button className="whatsapp-btn">
-          <i className="fa fa-whatsapp"></i> Chat on WhatsApp
+          <i className="fa fa-message"></i> Chat on WhatsApp
         </button>
       </div>
 

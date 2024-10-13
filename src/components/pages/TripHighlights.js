@@ -5,7 +5,7 @@ import './TripHighlights.css'; // Import the CSS file
 const TripHighlights = () => {
   return (
     <div className="container">
-      <p style={{fontSize:"30px" , marginTop:"150px" , marginBottom:"10px" , color:"black",  fontWeight :"bold"} }>Best Of Singapore | FREE Universal Studio <br></br>Tickets</p>
+      <p style={{fontSize:"30px" , marginTop:"0px" , marginBottom:"30px" , color:"black",  fontWeight :"bold"} }>Best Of Leh Ladakh | FREE Universal Studio Tickets</p>
       {/* <p style={{fontSize:"23px" , color:"grey",  fontWeight :"bold",  marginTop:"-10px" , textAlign:"left"} }>Trip Highlights</p> */}
       <div className="headingContainer">
      
@@ -14,13 +14,14 @@ const TripHighlights = () => {
       </div>
       
       <div className="contentContainer">
+        <div style={{fontSize:"25px" ,  marginBottom:"20px" , fontWeight:"bold" , color:"grey" , marginLeft:"20px"}}>Trip Highlights</div>
         <ul className="list">
           <li className="item">
-            Witness Singapore's impressive skyline, rich cultural diversity, culinary delights, 
+            Witness Leh's impressive skyline, rich cultural diversity, culinary delights, 
             and innovative spirit, a top global destination offering a unique mix of attractions.
           </li>
           <li className="item">
-            Marvel at Singapore's iconic Marina Bay Sands, where stunning architecture 
+            Marvel at Leh's iconic Marina Bay Sands, where stunning architecture 
             meets breathtaking views, offering a luxurious experience.
           </li>
           <li className="item">

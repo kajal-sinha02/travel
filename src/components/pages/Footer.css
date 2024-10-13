@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between; /* Distribute space between the content and footer */
   align-items: center; /* Centers content horizontally */
-  height: 350px; /* Use min-height to ensure it takes the full height */
+  height: 600px; /* Use min-height to ensure it takes the full height */
   font-family: Arial, sans-serif;
   position: relative;
   width: 100%;
@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 20px;
-  height: 750px; /* Adjust this height based on your design */
+  height : 400px; /* Adjust this height based on your design */
   width: 70%; /* Adjust width as needed */
   background-color: #ffffff;
   border-radius: 15px;
@@ -26,7 +26,7 @@
   font-size: 12.5px;
   font-weight: 550;
   color: #393939;
-  margin-bottom: 20px; /* Add some margin to separate from footer */
+  margin-bottom: 250px; /* Add some margin to separate from footer */
 }
 
 /* Each section gets equal space */
@@ -108,20 +108,22 @@ li {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
-
+ 
 /* Footer styling */
 .footer {
   background-color: #2F343C;
   color: white;
-  width: 100%; /* Set to 100% for proper alignment */
-  height: 70vh; /* Make footer height half the viewport height */
+width: 151.9%;
+  height: 80vh; /* Make footer height half the viewport height */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically in the footer */
   align-items: center; /* Center align items in the footer */
-  padding: 20px 0; /* Add some padding for spacing */
+ 
   position: absolute; /* Position set to absolute */
   bottom: 0; /* Ensure it stays at the bottom */
+  margin-bottom: -100px;
+
 }
 
 /* Footer text alignment and styling */

@@ -26,14 +26,13 @@ function App() {
         <Routes> {/* Change here from <Switch> to <Routes> */}
           {/* Route for the main page */}
           <Route path="/" element={<Home/>}/>
-
           {/* Route for AllCards page */}
           <Route path="/view" element={<ViewAll />} />
           <Route path="/home" element={<Home />} />
           <Route path="/planTrip" element={<PlanTrip />} />
           <Route path="/planDetails" element={<PlanDetails />} />
         </Routes>
-
+        <Footer /> 
     
       </div>
     </Router>

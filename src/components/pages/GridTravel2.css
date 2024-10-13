@@ -11,13 +11,13 @@
     grid-template-columns: repeat(4, 1fr); /* Default to 7 columns */
     grid-auto-rows: 250px; /* Default height for non-featured grid items */
     gap: 5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .travels2 {
     position: relative;
     overflow: hidden;
-    border-radius: 0px;
+    border-radius: 10px;
     height: 100%; /* Ensure it takes the full row height */
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
 }

@@ -4,7 +4,7 @@ import '../pages/Footer.css'
 const Footer = () => {
   return (
     <div className="container">
-      <div className="content">
+      <div className="content" style={{width:"1000px"}}>
         <div className="about-section">
           <h3>ABOUT THRILLOPHILIA</h3>
           <ul>
@@ -42,14 +42,14 @@ const Footer = () => {
   <h3>TRAVEL DESTINATIONS</h3>
   <div className="destinations-grid">
     <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Bali</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Dubai</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Singapore</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Thailand</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Andaman</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>India</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Ladakh</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Hong Kong</div>
-    <div className="destination" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPJPKDWgfqQgx31zhxxQAJdG5SbcTrHkY-SQ&s)' }}>Sri Lanka</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/8xtcwkg4c17tt1t85xtoqlog6j99_shutterstock_1282523707.jpg?w=340&dpr=2)' }}>Dubai</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/mspxuaj2rkl4kn61qiison1hh7im_ndrkvr49svb0s1xve28dzmozahs5_IMG20230321183838_01-01.jpg?w=auto&h=600)' }}>Singapore</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/o5mthnirc88oqt0urede9xfr6nwk_shutterstock_2414542203.jpg?w=340&dpr=2)' }}>Thailand</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/m21dqlu4lf2ekp42vrofmxeqklpl_shutterstock_1118600486.jpg?w=340&dpr=2)' }}>Andaman</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/mi1hujt87wfa8b41pmxmpy8e713q_shutterstock_2446462209.jpg?w=340&dpr=2)' }}>India</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/91auwe9632in9yhrixuqzuznmolq_1556193320_marina2.jpg?w=240&dpr=2)' }}>Ladakh</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/tt2p0hxisk3xixhbj08sxgfli153_7wcsxreqzgfwfd7icvmvparvwni8_1465888976_ap5.jpg?w=240&dpr=2)' }}>Hong Kong</div>
+    <div className="destination" style={{ backgroundImage: 'url(https://media1.thrillophilia.com/filestore/rbfpnbim9d5uw3iuwfcjk928yy5j_29d07cda-b6e3-447f-a225-2b55cea6b159-2545-dubai-dubai-aquarium---underwater-zoo---burj-khalifa-combo-02.jpg?w=580&dpr=2)' }}>Sri Lanka</div>
   </div>
 </div>
 
@@ -67,8 +67,8 @@ const Footer = () => {
           <i className="fab fa-linkedin"></i>
           <i className="fab fa-youtube"></i>
         </div>
-        <div style={{height : '400px'}}></div>
-        <p>© 2024 Thrillophilia.com All rights reserved.</p>
+       
+        <p style={{fontSize:"15px" , color:"grey" }}>© 2024 Thrillophilia.com All rights reserved.</p>
        
         <h4>
         The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
