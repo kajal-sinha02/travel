@@ -1,0 +1,125 @@
+/* Slider wrapper to center align the slider */
+.slider-wrapper {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    max-width: 1100px; /* Maximum width for large screens */
+    width: 100%; /* Full width for responsiveness */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Header styling */
+.header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Ensure title on left and button on right */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Full width for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Header title styling */
+.header-title {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333; /* Optional: Set title color */
+}
+
+/* View All Button */
+.view-all-button {
+    background-color: transparent;
+    color: orange; /* Button text color */
+    font-weight: bold;
+    border: transparent; /* Transparent border */
+    padding: 10px 15px; /* Padding around the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-decoration: none;
+}
+
+/* Hover effects for the button */
+.view-all-button:hover {
+    background-color: transparent; /* Background color on hover */
+    color: #FF5733; /* Text color on hover */
+    text-decoration: none;
+}
+
+/* Styles for the slider container */
+.slider-container {
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Full width for responsiveness */
+}
+
+/* Custom arrows (optional styling) */
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Change to desired color */
+}
+
+/* Horizontal line styling */
+.horizontal-line {
+    height: 1px; /* Height of the line */
+    background-color: #EFEFEF; /* Grey color for the line */
+    margin: 20px 0; /* Space above and below the line */
+    width: 100%; /* Full width of the container */
+}
+
+/* Gradient Div Styling */
+.gradient-div {
+    background: linear-gradient(to bottom, #FFFAEC, white);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 13px;
+    width: 100%; /* Adjust width as needed */
+    margin: 10px auto; /* Centering the div */
+}
+
+/* Card styles for better responsiveness */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items in the card */
+    background: white; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Shadow for depth */
+    overflow: hidden; /* Prevent overflow */
+    /* transition: transform 0.2s; Smooth hover effect */
+}
+
+/* Card hover effect */
+
+.card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #EFEFEF; /* Optional border between image and text */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 900px) {
+    .slider-wrapper {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+    .header-title {
+        font-size: 22px; /* Smaller font size for the title */
+    }
+    .view-all-button {
+        font-size: 14px; /* Smaller font size for the button */
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-wrapper {
+        padding: 10px; /* Further reduce padding */
+    }
+    .header-title {
+        font-size: 20px; /* Even smaller font size for mobile */
+    }
+    .view-all-button {
+        font-size: 12px; /* Smaller button text */
+    }
+}

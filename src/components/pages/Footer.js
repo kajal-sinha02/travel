@@ -125,7 +125,7 @@ const Footer = () => {
       </div> */}
 
       <footer className="footer">
-        <div style={{ height: "1700px" }}></div>
+        <div style={{ height: "100px" }}></div>
         <h2>thrillophilio.com</h2>
         <div style={{ height: "200px" }}></div>
         <div className="social-icons">

@@ -34,7 +34,7 @@ const ViewAll = () => {
       </div>
       {/* <Stay></Stay> */}
       <Work></Work>
-      <TravelCard2 heading="Destinations"></TravelCard2>
+      {/* <TravelCard2 heading="Destinations"></TravelCard2> */}
       <Plan></Plan>
       <LogoAnimation></LogoAnimation>
       <CommunityReviews></CommunityReviews>

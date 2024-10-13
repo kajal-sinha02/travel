@@ -30,6 +30,9 @@ const Home = () => {
       <TravelCard2 heading="Plan as per the best destinations in India"></TravelCard2>
       <Work></Work>
       <CardSliders images={images} name="Popular Destinations" />
+      <CardSliders images={images} name="Jaipur" />
+      <CardSliders images={images} name="Uttarakhand" />
+      <CardSliders images={images} name="Kerela" />
       <GridTravel title="Plan your trip to anywhere in the world"></GridTravel>
       <Plan></Plan>
 
