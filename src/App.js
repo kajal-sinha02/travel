@@ -1,21 +1,24 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Change here
-import Destination from "./components/pages/Destination";
+import Destination from "./components/Destination";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
-import Navbar from "./components/pages/Navbar";
+import Navbar from "./components/Navbar";
 import { images , images2} from '../src/array/imageData';
-import Footer from "./components/pages/Footer";
-import LogoAnimation from "./components/pages/LogoAnimation";
-import Slideshow from "./components/pages/Slideshow";
-import CardSliders from "./components/pages/CardSliders";
-import Work from "./components/pages/Work"
-import ViewAll from "./components/pages/ViewAll";
-import ViewAll2 from "./components/pages/ViewAll2";
-import Home from "./components/pages/Home";
-import PlanTrip from "./components/pages/PlanTrip";
-import PlanDetails from "./components/pages/PlanDetails"
+import Footer from "./components/Footer";
+import LogoAnimation from "./components/LogoAnimation";
+import Slideshow from "./components/Slideshow";
+import CardSliders from "./components/CardSliders";
+import Work from "./components/Work"
+import ViewAll from "./Pages/ViewAll";
+import ViewAll2 from "./Pages/ViewAll2";
+import Home from "./Pages/Home"
+import PlanTrip from "./Pages/PlanTrip";
+import PlanDetails from "./Pages/PlanDetails"
+import Login from "./components/Login";
+
+
 function App() {
   const [activeTab, setActiveTab] = useState("Tours"); // Toggle state
 
@@ -33,6 +36,8 @@ function App() {
           <Route path="/planTrip" element={<PlanTrip />} />
           <Route path="/planDetails" element={<PlanDetails />} />
           <Route path="/viewPackages" element={<ViewAll2 />} />
+        
+  
         </Routes>
         <Footer /> 
     
